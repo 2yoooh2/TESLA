@@ -46,7 +46,6 @@
         <section class="about_hero_wrap">
             <div class="about_hero_inner">
 
-                <!-- 이미지 예정(임시 경로: ./img/about/hero_placeholder.jpg) : 본사/공장 전경 또는 브랜드 상징 컷 -->
                 <div class="about_hero_bg"></div>
                 <div class="about_hero_dim"></div>
 
@@ -64,12 +63,16 @@
 
         <!-- 2. Our Mission -->
         <section class="mission_wrap">
-            <div class="mission_inner">
+            <div class="mission_inner reveal">
 
-                <span class="mission_eyebrow">Our Mission</span>
                 <h2 class="mission_title">지속 가능한 에너지로의 전환을 가속화합니다</h2>
                 <p class="mission_desc">
-                    Tesla는 자동차를 넘어 에너지 생산, 저장, 이동까지 아우르는 지속 가능한 미래를 만들어갑니다.
+                    Tesla는 전기차를 만드는 자동차 회사로 출발했지만, 지금은 에너지를 만들고 저장하고 쓰는 방식 전체를 다시 설계하는 회사에 가깝습니다.
+                    자동차, 배터리, 태양광은 각자 다른 사업이 아니라 하나의 에너지 전환 과정 안에서 서로 맞물려 있습니다.
+                </p>
+                <p class="mission_desc">
+                    태양광 패널로 만든 전기를 Powerwall, Megapack 같은 저장 장치에 담아두었다가 필요한 순간 차량과 가정에 공급하는 흐름이 그 예입니다.
+                    생산과 저장, 이동이 하나의 순환 구조로 연결될 때 화석연료에 대한 의존은 실질적으로 줄어듭니다.
                 </p>
 
             </div>
@@ -80,41 +83,43 @@
         <section class="overview_wrap">
             <div class="overview_inner">
 
-                <div class="overview_content">
-                    <span class="overview_eyebrow">Company Overview</span>
+                <div class="overview_content reveal">
                     <h2 class="overview_title">Tesla는 어떤 회사인가</h2>
                     <p class="overview_desc">
-                        Tesla는 자동차 제조사를 넘어 소프트웨어, 인공지능, 에너지 사업까지 다루는 기업입니다.
+                        Tesla의 사업은 크게 다섯 갈래로 나뉩니다. 전기차를 설계하고 생산하는 것에서 출발해 배터리와 에너지 저장 시스템, 태양광 발전,
+                        차량과 인프라를 잇는 소프트웨어, 충전 네트워크까지 함께 운영합니다.
+                    </p>
+                    <p class="overview_desc">
+                        이 다섯 영역은 분리된 사업부가 아니라 하나의 제품 경험으로 연결됩니다. 차량에서 쌓인 주행 데이터는 소프트웨어 업데이트로 이어지고,
+                        에너지 저장 사업에서 얻은 배터리 기술은 다시 차량 설계에 반영됩니다.
                     </p>
 
-                    <!-- TODO: 설립 연도 / 본사 소재지 - 검증된 정보로 확정 후 작성 -->
                     <p class="overview_founding">
-                        [TODO: 설립 연도 및 본사 정보 - 검증 후 작성]
+                        2003년 설립되었으며, 현재 미국 텍사스 오스틴에 본사를 두고 있습니다.
                     </p>
 
                     <ul class="overview_business">
                         <li>Vehicles</li>
-                        <li>Energy</li>
+                        <li>Energy Storage</li>
+                        <li>Solar</li>
                         <li>Software</li>
-                        <li>AI</li>
+                        <li>Charging</li>
                     </ul>
 
-                    <!-- TODO: 아래 수치는 검증된 공식 자료 확인 전까지 자리표시자로 유지 -->
                     <ul class="overview_stats">
                         <li>
                             <span>Global Presence</span>
-                            <strong>[TODO: 검증된 진출 국가 수]</strong>
+                            <strong>전 세계 주요 시장에 진출</strong>
                         </li>
 
                         <li>
                             <span>Production Sites</span>
-                            <strong>[TODO: 검증된 생산 거점 정보]</strong>
+                            <strong>북미·유럽·아시아 전역의 기가팩토리</strong>
                         </li>
                     </ul>
                 </div>
 
-                <!-- 이미지 예정(임시 경로: ./img/about/overview_placeholder.jpg) : 본사/생산시설 전경 -->
-                <div class="overview_image"></div>
+                <div class="overview_image reveal"></div>
 
             </div>
         </section>
@@ -124,40 +129,75 @@
         <section class="history_wrap">
             <div class="history_inner">
 
-                <div class="history_heading">
-                    <span class="history_eyebrow">History and Growth</span>
+                <div class="history_heading reveal">
                     <h2 class="history_title">Tesla의 성장 과정</h2>
                 </div>
 
                 <div class="history_content">
 
-                    <!-- 이미지 예정(임시 경로: ./img/about/history_placeholder.jpg) : 대표 이미지 1장 -->
-                    <div class="history_image"></div>
+                    <div class="history_image reveal"></div>
 
-                    <!-- TODO: 연도/사건/설명 - 검증된 정보로 확정 후 작성 (핵심 성장 사건 4~5개) -->
-                    <ul class="history_list">
+                    <ul class="history_list reveal">
                         <li class="history_item">
-                            <span class="history_year">[연도]</span>
-                            <strong class="history_event">[사건 제목]</strong>
-                            <p>[짧은 설명]</p>
+                            <span class="history_year">2003</span>
+                            <strong class="history_event">Tesla 설립</strong>
+                            <p>
+                                Martin Eberhard와 Marc Tarpenning이 실리콘밸리에서 전기차 전문 기업으로 Tesla Motors를 설립했습니다.
+                                내연기관이 지배하던 자동차 시장에 전동화라는 대안을 제시한 출발점이었습니다.
+                            </p>
                         </li>
 
                         <li class="history_item">
-                            <span class="history_year">[연도]</span>
-                            <strong class="history_event">[사건 제목]</strong>
-                            <p>[짧은 설명]</p>
+                            <span class="history_year">2008</span>
+                            <strong class="history_event">Roadster 출시</strong>
+                            <p>
+                                최초의 양산형 전기 스포츠카 Roadster를 선보이며, 전기차도 기존 스포츠카 못지않은 가속과 주행 성능을
+                                낼 수 있다는 것을 증명했습니다.
+                            </p>
                         </li>
 
                         <li class="history_item">
-                            <span class="history_year">[연도]</span>
-                            <strong class="history_event">[사건 제목]</strong>
-                            <p>[짧은 설명]</p>
+                            <span class="history_year">2012</span>
+                            <strong class="history_event">Model S 출시</strong>
+                            <p>
+                                프리미엄 세단 Model S를 출시해 전기차를 소수의 실험적 제품이 아니라 실제로 선택 가능한 프리미엄 차량으로
+                                자리잡게 했습니다. 이후 이어진 SUV, 보급형 라인업 확장의 기반이 되었습니다.
+                            </p>
                         </li>
 
                         <li class="history_item">
-                            <span class="history_year">[연도]</span>
-                            <strong class="history_event">[사건 제목]</strong>
-                            <p>[짧은 설명]</p>
+                            <span class="history_year">2015</span>
+                            <strong class="history_event">에너지 사업 공식 출범</strong>
+                            <p>
+                                가정용 배터리 Powerwall과 산업용 저장장치 Powerpack을 공개하며 에너지 저장 사업을 본격화했습니다.
+                                자동차 배터리 기술을 가정과 산업 현장의 전력 저장으로 확장한 시점입니다.
+                            </p>
+                        </li>
+
+                        <li class="history_item">
+                            <span class="history_year">2016</span>
+                            <strong class="history_event">Gigafactory Nevada 가동</strong>
+                            <p>
+                                네바다 기가팩토리에서 배터리 셀 생산을 시작하며 배터리를 직접 대량 생산할 수 있는 체계를 갖췄습니다.
+                                이후 여러 나라로 생산거점을 넓히는 기가팩토리 전략의 출발점이 되었습니다.
+                            </p>
+                        </li>
+
+                        <li class="history_item">
+                            <span class="history_year">2017</span>
+                            <strong class="history_event">Model 3 양산 시작</strong>
+                            <p>
+                                상대적으로 접근 가능한 가격대의 Model 3 양산을 시작하며 전기차 대중화의 전환점을 만들었습니다.
+                            </p>
+                        </li>
+
+                        <li class="history_item">
+                            <span class="history_year">2021~현재</span>
+                            <strong class="history_event">텍사스 이전과 글로벌 생산 확장</strong>
+                            <p>
+                                본사를 텍사스 오스틴으로 옮기고 상하이, 베를린 등 여러 대륙의 기가팩토리를 가동하며 생산 규모를 키웠습니다.
+                                지금은 차량 제조를 넘어 소프트웨어와 에너지 기술까지 아우르는 기술 생태계로 성장했습니다.
+                            </p>
                         </li>
                     </ul>
 
@@ -169,20 +209,23 @@
 
         <!-- 5. Sustainability -->
         <section class="sustain_wrap">
-            <div class="sustain_inner">
+            <div class="sustain_bg"></div>
+            <div class="sustain_dim"></div>
 
+            <div class="sustain_inner reveal">
                 <div class="sustain_content">
                     <span class="sustain_eyebrow">Sustainability</span>
                     <h2 class="sustain_title">에너지 생산, 저장, 이동을 연결하다</h2>
-                    <p class="sustain_desc">
-                        지속 가능한 에너지로의 전환과 환경적 영향을 고려한 Tesla의 방향을 소개합니다.
+                    <p class="sustain_lead">
+                        지속가능성은 선언이 아니라 차량과 생산 방식 전반에 걸친 구체적인 설계 기준입니다.
                     </p>
-                    <!-- TODO: 공식 자료 인용 시 기준 연도 표기 필요 -->
+                    <p class="sustain_desc">
+                        전기차는 주행 중 배출가스를 없애는 것과 함께, 태양광으로 만든 전력을 저장했다가 필요할 때 꺼내 쓰는
+                        재생에너지 활용을 가능하게 합니다. Tesla는 배터리 생산 효율과 소재 기술을 꾸준히 개선해 제조 단계의 자원
+                        소비도 함께 줄이고 있습니다. 이런 접근은 제품을 쓰는 순간만이 아니라 생산부터 운영까지 에너지 흐름 전체를
+                        고려하는 방식입니다.
+                    </p>
                 </div>
-
-                <!-- 이미지 예정(임시 경로: ./img/about/sustain_placeholder.jpg) : 태양광/에너지 관련 이미지 -->
-                <div class="sustain_image"></div>
-
             </div>
         </section>
 
@@ -191,16 +234,29 @@
         <section class="people_wrap">
             <div class="people_inner">
 
-                <div class="people_content">
-                    <span class="people_eyebrow">Our People</span>
+                <div class="people_content reveal">
                     <h2 class="people_title">하나의 미션, 다양한 팀</h2>
                     <p class="people_desc">
-                        다양한 분야의 팀이 하나의 미션을 향해 함께 협업합니다.
+                        하나의 차량이 만들어지기까지 여러 전문 영역이 함께 움직입니다. 엔지니어링 팀이 배터리와 파워트레인을
+                        설계하면, 소프트웨어 팀은 주행 보조 기능과 인포테인먼트를 붙이고, 디자인 팀은 그 결과를 사람이 매일
+                        다루는 형태로 다듬습니다.
                     </p>
+                    <p class="people_desc">
+                        제조 팀은 이 설계를 실제 생산 라인에서 구현하고, 에너지 팀은 차량 밖에서 태양광과 배터리 저장 시스템을
+                        함께 개발합니다. 글로벌 서비스와 인프라 팀은 충전소 운영과 사후 지원으로 이 흐름을 이어갑니다.
+                    </p>
+
+                    <ul class="people_domains">
+                        <li>Engineering</li>
+                        <li>Software</li>
+                        <li>Design</li>
+                        <li>Manufacturing</li>
+                        <li>Energy</li>
+                        <li>Global Service &amp; Infrastructure</li>
+                    </ul>
                 </div>
 
-                <!-- 이미지 예정(임시 경로: ./img/about/people_placeholder.jpg) : 팀 협업 사진 -->
-                <div class="people_image"></div>
+                <div class="people_image reveal"></div>
 
             </div>
         </section>
@@ -208,9 +264,13 @@
 
         <!-- 7. Closing Navigation -->
         <section class="closing_wrap">
-            <div class="closing_inner">
+            <div class="closing_inner reveal">
 
-                <p class="closing_desc">Tesla에 대해 더 알아보세요.</p>
+                <p class="closing_desc">
+                    Tesla의 차량과 소프트웨어, 에너지 솔루션은 결국 하나의 목표로 이어집니다.
+                    화석연료에 대한 의존을 줄이고, 이동과 에너지 사용 방식을 함께 바꾸는 것입니다.
+                    아래에서 이 여정을 이루는 기술과 라인업을 더 살펴보세요.
+                </p>
 
                 <ul class="closing_nav">
                     <li class="closing_nav_item">
@@ -281,6 +341,25 @@
 
         </div>
     </footer>
+
+
+    <script>
+        /* About 페이지 전용 scroll reveal (절제된 모션, common.js는 무수정) */
+        const revealEls = document.querySelectorAll(".reveal");
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        revealEls.forEach((el) => revealObserver.observe(el));
+    </script>
 </body>
 
 </html>
