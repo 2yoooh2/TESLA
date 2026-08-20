@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
+
+    <script src="./script/about.js" defer></script>
 </head>
 
 <body>
@@ -42,265 +44,178 @@
 
 
     <main>
-        <!-- 1. Sub Hero -->
-        <section class="about_hero_wrap">
-            <div class="about_hero_inner">
-
-                <div class="about_hero_bg"></div>
-                <div class="about_hero_dim"></div>
-
-                <div class="about_hero_heading">
-                    <span class="about_hero_eyebrow">ABOUT TESLA</span>
-                    <h2 class="about_hero_title">세상을 지속 가능한 에너지로</h2>
-                    <p class="about_hero_desc">
-                        Tesla가 걸어온 길과 지향하는 방향을 소개합니다.
-                    </p>
+        <!-- ============ 1. HERO ============ -->
+        <section class="hero" id="hero">
+            <div class="hero-sticky">
+                <div class="hero-text">
+                    <p class="subtitle" id="subtitle">서브타이틀</p>
+                    <h1 class="title" id="title">메인타이틀</h1>
                 </div>
-
+                <div class="rising-box" id="risingBox">IMAGE PLACEHOLDER (100vh - 200px)</div>
             </div>
         </section>
 
-
-        <!-- 2. Our Mission -->
-        <section class="mission_wrap">
-            <div class="mission_inner reveal">
-
-                <h2 class="mission_title">지속 가능한 에너지로의 전환을 가속화합니다</h2>
-                <p class="mission_desc">
-                    Tesla는 전기차를 만드는 자동차 회사로 출발했지만, 지금은 에너지를 만들고 저장하고 쓰는 방식 전체를 다시 설계하는 회사에 가깝습니다.
-                    자동차, 배터리, 태양광은 각자 다른 사업이 아니라 하나의 에너지 전환 과정 안에서 서로 맞물려 있습니다.
-                </p>
-                <p class="mission_desc">
-                    태양광 패널로 만든 전기를 Powerwall, Megapack 같은 저장 장치에 담아두었다가 필요한 순간 차량과 가정에 공급하는 흐름이 그 예입니다.
-                    생산과 저장, 이동이 하나의 순환 구조로 연결될 때 화석연료에 대한 의존은 실질적으로 줄어듭니다.
-                </p>
-
-            </div>
-        </section>
-
-
-        <!-- 3. Company Overview (Global Impact 통합) -->
-        <section class="overview_wrap">
-            <div class="overview_inner">
-
-                <div class="overview_content reveal">
-                    <h2 class="overview_title">Tesla는 어떤 회사인가</h2>
-                    <p class="overview_desc">
-                        Tesla의 사업은 크게 다섯 갈래로 나뉩니다. 전기차를 설계하고 생산하는 것에서 출발해 배터리와 에너지 저장 시스템, 태양광 발전,
-                        차량과 인프라를 잇는 소프트웨어, 충전 네트워크까지 함께 운영합니다.
-                    </p>
-                    <p class="overview_desc">
-                        이 다섯 영역은 분리된 사업부가 아니라 하나의 제품 경험으로 연결됩니다. 차량에서 쌓인 주행 데이터는 소프트웨어 업데이트로 이어지고,
-                        에너지 저장 사업에서 얻은 배터리 기술은 다시 차량 설계에 반영됩니다.
-                    </p>
-
-                    <p class="overview_founding">
-                        2003년 설립되었으며, 현재 미국 텍사스 오스틴에 본사를 두고 있습니다.
-                    </p>
-
-                    <ul class="overview_business">
-                        <li>Vehicles</li>
-                        <li>Energy Storage</li>
-                        <li>Solar</li>
-                        <li>Software</li>
-                        <li>Charging</li>
-                    </ul>
-
-                    <ul class="overview_stats">
-                        <li>
-                            <span>Global Presence</span>
-                            <strong>전 세계 주요 시장에 진출</strong>
-                        </li>
-
-                        <li>
-                            <span>Production Sites</span>
-                            <strong>북미·유럽·아시아 전역의 기가팩토리</strong>
-                        </li>
-                    </ul>
+        <!-- ============ 2. IDEA TO SHELF ============ -->
+        <section class="its-section">
+            <div class="its-inner">
+                <div class="its-left">
+                    <h2 class="its-title" id="itsTitle">
+                        <span class="line" data-delay="0">IDEA TO SHELF</span><br>
+                        <span class="line" data-delay="200">EVERY STEP,</span><br>
+                        <span class="line" data-delay="400">OURS</span>
+                    </h2>
+                    <p class="its-sub">아이디어에서 진열대까지, 모든 단계를 우리가 함께.</p>
                 </div>
 
-                <div class="overview_image reveal"></div>
-
-            </div>
-        </section>
-
-
-        <!-- 4. History and Growth -->
-        <section class="history_wrap">
-            <div class="history_inner">
-
-                <div class="history_heading reveal">
-                    <h2 class="history_title">Tesla의 성장 과정</h2>
-                </div>
-
-                <div class="history_content">
-
-                    <div class="history_image reveal"></div>
-
-                    <ul class="history_list reveal">
-                        <li class="history_item">
-                            <span class="history_year">2003</span>
-                            <strong class="history_event">Tesla 설립</strong>
-                            <p>
-                                Martin Eberhard와 Marc Tarpenning이 실리콘밸리에서 전기차 전문 기업으로 Tesla Motors를 설립했습니다.
-                                내연기관이 지배하던 자동차 시장에 전동화라는 대안을 제시한 출발점이었습니다.
-                            </p>
-                        </li>
-
-                        <li class="history_item">
-                            <span class="history_year">2008</span>
-                            <strong class="history_event">Roadster 출시</strong>
-                            <p>
-                                최초의 양산형 전기 스포츠카 Roadster를 선보이며, 전기차도 기존 스포츠카 못지않은 가속과 주행 성능을
-                                낼 수 있다는 것을 증명했습니다.
-                            </p>
-                        </li>
-
-                        <li class="history_item">
-                            <span class="history_year">2012</span>
-                            <strong class="history_event">Model S 출시</strong>
-                            <p>
-                                프리미엄 세단 Model S를 출시해 전기차를 소수의 실험적 제품이 아니라 실제로 선택 가능한 프리미엄 차량으로
-                                자리잡게 했습니다. 이후 이어진 SUV, 보급형 라인업 확장의 기반이 되었습니다.
-                            </p>
-                        </li>
-
-                        <li class="history_item">
-                            <span class="history_year">2015</span>
-                            <strong class="history_event">에너지 사업 공식 출범</strong>
-                            <p>
-                                가정용 배터리 Powerwall과 산업용 저장장치 Powerpack을 공개하며 에너지 저장 사업을 본격화했습니다.
-                                자동차 배터리 기술을 가정과 산업 현장의 전력 저장으로 확장한 시점입니다.
-                            </p>
-                        </li>
-
-                        <li class="history_item">
-                            <span class="history_year">2016</span>
-                            <strong class="history_event">Gigafactory Nevada 가동</strong>
-                            <p>
-                                네바다 기가팩토리에서 배터리 셀 생산을 시작하며 배터리를 직접 대량 생산할 수 있는 체계를 갖췄습니다.
-                                이후 여러 나라로 생산거점을 넓히는 기가팩토리 전략의 출발점이 되었습니다.
-                            </p>
-                        </li>
-
-                        <li class="history_item">
-                            <span class="history_year">2017</span>
-                            <strong class="history_event">Model 3 양산 시작</strong>
-                            <p>
-                                상대적으로 접근 가능한 가격대의 Model 3 양산을 시작하며 전기차 대중화의 전환점을 만들었습니다.
-                            </p>
-                        </li>
-
-                        <li class="history_item">
-                            <span class="history_year">2021~현재</span>
-                            <strong class="history_event">텍사스 이전과 글로벌 생산 확장</strong>
-                            <p>
-                                본사를 텍사스 오스틴으로 옮기고 상하이, 베를린 등 여러 대륙의 기가팩토리를 가동하며 생산 규모를 키웠습니다.
-                                지금은 차량 제조를 넘어 소프트웨어와 에너지 기술까지 아우르는 기술 생태계로 성장했습니다.
-                            </p>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- 5. Sustainability -->
-        <section class="sustain_wrap">
-            <div class="sustain_bg"></div>
-            <div class="sustain_dim"></div>
-
-            <div class="sustain_inner reveal">
-                <div class="sustain_content">
-                    <span class="sustain_eyebrow">Sustainability</span>
-                    <h2 class="sustain_title">에너지 생산, 저장, 이동을 연결하다</h2>
-                    <p class="sustain_lead">
-                        지속가능성은 선언이 아니라 차량과 생산 방식 전반에 걸친 구체적인 설계 기준입니다.
-                    </p>
-                    <p class="sustain_desc">
-                        전기차는 주행 중 배출가스를 없애는 것과 함께, 태양광으로 만든 전력을 저장했다가 필요할 때 꺼내 쓰는
-                        재생에너지 활용을 가능하게 합니다. Tesla는 배터리 생산 효율과 소재 기술을 꾸준히 개선해 제조 단계의 자원
-                        소비도 함께 줄이고 있습니다. 이런 접근은 제품을 쓰는 순간만이 아니라 생산부터 운영까지 에너지 흐름 전체를
-                        고려하는 방식입니다.
-                    </p>
+                <div class="its-right" id="carousel">
+                    <div class="its-track" id="track"></div>
                 </div>
             </div>
         </section>
 
+        <div class="section-gap-2-3"></div>
 
-        <!-- 6. Our People -->
-        <section class="people_wrap">
-            <div class="people_inner">
-
-                <div class="people_content reveal">
-                    <h2 class="people_title">하나의 미션, 다양한 팀</h2>
-                    <p class="people_desc">
-                        하나의 차량이 만들어지기까지 여러 전문 영역이 함께 움직입니다. 엔지니어링 팀이 배터리와 파워트레인을
-                        설계하면, 소프트웨어 팀은 주행 보조 기능과 인포테인먼트를 붙이고, 디자인 팀은 그 결과를 사람이 매일
-                        다루는 형태로 다듬습니다.
-                    </p>
-                    <p class="people_desc">
-                        제조 팀은 이 설계를 실제 생산 라인에서 구현하고, 에너지 팀은 차량 밖에서 태양광과 배터리 저장 시스템을
-                        함께 개발합니다. 글로벌 서비스와 인프라 팀은 충전소 운영과 사후 지원으로 이 흐름을 이어갑니다.
-                    </p>
-
-                    <ul class="people_domains">
-                        <li>Engineering</li>
-                        <li>Software</li>
-                        <li>Design</li>
-                        <li>Manufacturing</li>
-                        <li>Energy</li>
-                        <li>Global Service &amp; Infrastructure</li>
-                    </ul>
+        <!-- ============ 3. FOUR VALUES ============ -->
+        <div class="values-wrap" id="valuesWrap">
+            <div class="values-inner">
+                <div class="values-sticky-text">
+                    <h2 class="values-title" id="valuesTitle">FOUR VALUES<br>ONE STANDARD</h2>
+                    <p class="values-sub">네 가지 가치, 하나의 기준.</p>
                 </div>
 
-                <div class="people_image reveal"></div>
+                <div class="value-card card-insight" id="cardInsight">
+                    <div class="value-card-img-wrap">
+                        <img class="value-card-img" src="https://images.unsplash.com/photo-1556760544-74068565f05c?w=500&q=80" alt="Insight">
+                    </div>
+                    <span class="value-card-name">INSIGHT</span>
+                    <p class="value-card-desc">빠르게 변화하는 시장 속에서 보이지 않는 니즈를 포착하고, 소비자가 반응하는 제품으로 구현합니다.</p>
+                </div>
 
+                <div class="value-card card-param" id="cardParam">
+                    <div class="value-card-img-wrap">
+                        <img class="value-card-img" src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500&q=80" alt="Parametrization">
+                    </div>
+                    <span class="value-card-name">PARAMETRIZATION</span>
+                    <p class="value-card-desc">사용감과 효능을 설계 파라미터로 전환해 데이터로 해석·비교되는 환경까지 반영합니다.</p>
+                </div>
+
+                <div class="value-card card-exec" id="cardExec">
+                    <div class="value-card-img-wrap">
+                        <img class="value-card-img" src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&q=80" alt="Execution">
+                    </div>
+                    <span class="value-card-name">EXECUTION</span>
+                    <p class="value-card-desc">설계된 제품이 실제로 동일하게 구현되도록 일관된 품질을 안정적으로 유지합니다.</p>
+                </div>
+
+                <div class="value-card card-perf" id="cardPerf">
+                    <div class="value-card-img-wrap">
+                        <img class="value-card-img" src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Performance">
+                    </div>
+                    <span class="value-card-name">PERFORMANCE</span>
+                    <p class="value-card-desc">제품은 결국 시장에서 평가됩니다. 우리는 반복적으로 성과를 만들어내는 제품을 구현합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-gap-3-4"></div>
+
+        <!-- ============ 4. MAKE MORE THAN PRODUCTS ============ -->
+        <section class="co-make">
+            <div class="co-make-inner">
+                <h2 class="co-make-title" id="makeTitle">
+                    MAKE MORE<br>THAN PRODUCTS
+                </h2>
+
+                <div class="co-make-upper">
+                    <div class="co-make-left">
+                        <div class="co-make-img-wrap" id="makeImgWrap">
+                            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" class="co-make-img is-active" alt="">
+                            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80" class="co-make-img" alt="">
+                            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80" class="co-make-img" alt="">
+                        </div>
+                    </div>
+
+                    <div class="co-make-right">
+                        <div class="co-make-top">
+                            <p class="co-make-heading">우리는 제품을 만들지만,<br>그 이상의 결과를 만듭니다.</p>
+                            <p class="co-make-body">더 나은 품질과 경험을 통해 시장에서 의미 있는 변화를 만들어가는 사람들입니다.</p>
+                        </div>
+
+                        <ul class="co-make-list" id="makeList">
+                            <li class="co-make-item is-active" data-index="0">
+                                <div class="co-make-item-row">
+                                    <div class="co-make-item-left-col">
+                                        <span class="co-make-item-title">변화를 읽고 앞서 움직입니다.</span>
+                                    </div>
+                                    <p class="co-make-item-desc">시장과 트렌드를 빠르게 읽고, 새로운 시도로 결과를 만들어냅니다.</p>
+                                </div>
+                                <div class="co-make-item-divider"></div>
+                            </li>
+                            <li class="co-make-item" data-index="1">
+                                <div class="co-make-item-row">
+                                    <div class="co-make-item-left-col">
+                                        <span class="co-make-item-title">기준을 지키며 결과를 만듭니다.</span>
+                                    </div>
+                                    <p class="co-make-item-desc">원칙과 품질 기준을 흔들림 없이 유지하고, 결과로 신뢰를 만듭니다.</p>
+                                </div>
+                                <div class="co-make-item-divider"></div>
+                            </li>
+                            <li class="co-make-item" data-index="2">
+                                <div class="co-make-item-row">
+                                    <div class="co-make-item-left-col">
+                                        <span class="co-make-item-title">고객을 이해하고 연결합니다.</span>
+                                    </div>
+                                    <p class="co-make-item-desc">고객의 관점에서 생각하고, 더 나은 경험과 가치로 이어지게 합니다.</p>
+                                </div>
+                                <div class="co-make-item-divider"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="co-way">
+                    <h3 class="co-way-title">OUR WAY OF WORK</h3>
+                    <div class="co-way-cards" id="wayCards">
+                        <div class="co-way-card" data-delay="0">
+                            <div class="co-way-card-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&q=80" class="co-way-card-img" alt="COLLABORATION">
+                            </div>
+                            <span class="co-way-card-name">COLLABORATION</span>
+                            <p class="co-way-card-desc">함께 더 나은 결과를 만들어내는 방식</p>
+                        </div>
+                        <div class="co-way-card" data-delay="120">
+                            <div class="co-way-card-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500&q=80" class="co-way-card-img" alt="CUSTOMER FOCUS">
+                            </div>
+                            <span class="co-way-card-name">CUSTOMER FOCUS</span>
+                            <p class="co-way-card-desc">고객을 기준으로 판단하는 관점</p>
+                        </div>
+                        <div class="co-way-card" data-delay="240">
+                            <div class="co-way-card-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80" class="co-way-card-img" alt="OWNERSHIP">
+                            </div>
+                            <span class="co-way-card-name">OWNERSHIP</span>
+                            <p class="co-way-card-desc">결과에 끝까지 책임지는 태도</p>
+                        </div>
+                        <div class="co-way-card" data-delay="360">
+                            <div class="co-way-card-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&q=80" class="co-way-card-img" alt="PRODUCTIVITY">
+                            </div>
+                            <span class="co-way-card-name">PRODUCTIVITY</span>
+                            <p class="co-way-card-desc">속도와 완성도를 동시에 높이는 실행력</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <div class="end-spacer">— 끝 —</div>
 
-        <!-- 7. Closing Navigation -->
-        <section class="closing_wrap">
-            <div class="closing_inner reveal">
-
-                <p class="closing_desc">
-                    Tesla의 차량과 소프트웨어, 에너지 솔루션은 결국 하나의 목표로 이어집니다.
-                    화석연료에 대한 의존을 줄이고, 이동과 에너지 사용 방식을 함께 바꾸는 것입니다.
-                    아래에서 이 여정을 이루는 기술과 라인업을 더 살펴보세요.
-                </p>
-
-                <ul class="closing_nav">
-                    <li class="closing_nav_item">
-                        <a href="#">
-                            <strong>Technology</strong>
-                            <span>Tesla의 핵심 기술을 만나보세요.</span>
-                        </a>
-                    </li>
-
-                    <li class="closing_nav_item">
-                        <a href="#">
-                            <strong>Models</strong>
-                            <span>차량 라인업을 확인해보세요.</span>
-                        </a>
-                    </li>
-
-                    <li class="closing_nav_item">
-                        <a href="#">
-                            <strong>Charging</strong>
-                            <span>충전 인프라를 살펴보세요.</span>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </section>
+        <div class="progress-badge" id="progressBadge">progress: 0%</div>
+        <div class="its-hint">← 카드를 드래그해서 넘겨보세요 →</div>
     </main>
 
 
-    <!-- 8. Common Footer -->
     <footer>
         <div class="footer_inner">
 
@@ -341,25 +256,6 @@
 
         </div>
     </footer>
-
-
-    <script>
-        /* About 페이지 전용 scroll reveal (절제된 모션, common.js는 무수정) */
-        const revealEls = document.querySelectorAll(".reveal");
-
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("in-view");
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.2
-        });
-
-        revealEls.forEach((el) => revealObserver.observe(el));
-    </script>
 </body>
 
 </html>
