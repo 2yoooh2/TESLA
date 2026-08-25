@@ -15,8 +15,6 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
-
-    <script src="./script/about.js" defer></script>
 </head>
 
 <body>
@@ -32,7 +30,7 @@
                 <h2 class="screen_out">주메뉴영역</h2>
                 <ul>
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="#">Technology</a></li>
+                    <li><a href="./technology.html">Technology</a></li>
                     <li><a href="#">Vehicles</a></li>
                     <li><a href="#">Charging</a></li>
                 </ul>
@@ -44,175 +42,84 @@
 
 
     <main>
-        <!-- ============ 1. HERO ============ -->
-        <section class="hero" id="hero">
-            <div class="hero-sticky">
-                <div class="hero-text">
-                    <p class="subtitle" id="subtitle">서브타이틀</p>
-                    <h1 class="title" id="title">메인타이틀</h1>
+        <section class="intro_wrap">
+            <div class="intro_inner">
+
+                <div class="who_row">
+                    <div class="who_text">
+                        <span class="who_eyebrow">WHO WE ARE</span>
+                        <h2 class="who_title">우리는 Tesla입니다.</h2>
+                        <p class="who_desc">
+                            Tesla는 자동차, 에너지, 소프트웨어의 경계를 넘어 새로운 기술과 제품을 만들어가는 기업입니다.<br>
+                            전기차부터 에너지 제품, 소프트웨어와 제조 기술까지 다양한 영역을 직접 연결하며 기존의 이동과 에너지 사용 방식을 새롭게 정의하고 있습니다.
+                        </p>
+                    </div>
+                    <div class="who_image"></div>
                 </div>
-                <div class="rising-box" id="risingBox">IMAGE PLACEHOLDER (100vh - 200px)</div>
+
+                <div class="mission_row">
+                    <div class="mission_visual">
+                        <div class="mission_image mission_image1"></div>
+                        <div class="mission_image mission_image2"></div>
+                    </div>
+                    <div class="mission_text">
+                        <span class="mission_eyebrow">OUR MISSION</span>
+                        <h2 class="mission_title">지속 가능한 미래를 향해</h2>
+                        <p class="mission_desc">
+                            Tesla의 목표는 지속 가능한 에너지로의 전환을 가속화하는 것입니다.<br>
+                            화석연료에 대한 의존도를 낮추고 지속 가능한 에너지가 일상의 자연스러운 선택이 될 수 있도록 새로운 기술과 제품을 개발하고 있습니다.<br>
+                            더 나은 이동과 에너지의 미래를 현실로 만드는 것, 그것이 Tesla가 나아가는 방향입니다.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- ============ 2. IDEA TO SHELF ============ -->
-        <section class="its-section">
-            <div class="its-inner">
-                <div class="its-left">
-                    <h2 class="its-title" id="itsTitle">
-                        <span class="line" data-delay="0">IDEA TO SHELF</span><br>
-                        <span class="line" data-delay="200">EVERY STEP,</span><br>
-                        <span class="line" data-delay="400">OURS</span>
-                    </h2>
-                    <p class="its-sub">아이디어에서 진열대까지, 모든 단계를 우리가 함께.</p>
-                </div>
+        <section class="what_wrap">
+            <div class="what_inner">
+                <div class="what_row">
 
-                <div class="its-right" id="carousel">
-                    <div class="its-track" id="track"></div>
+                    <div class="what_left">
+                        <div class="what_item what_item1">
+                            <div class="what_item_img"></div>
+                            <span class="what_item_name">Engineering · 엔지니어링</span>
+                            <p class="what_item_desc">
+                                차량과 에너지 제품의 핵심 기술부터 새로운 제조 방식까지 직접 설계하고 개발합니다. 성능과 효율을 높이는 동시에 기존의 한계를 넘어설 수 있는 새로운 기술적 해결책을 만들어갑니다.
+                            </p>
+                        </div>
+
+                        <div class="what_item what_item2">
+                            <div class="what_item_img"></div>
+                            <span class="what_item_name">Software · 소프트웨어</span>
+                            <p class="what_item_desc">
+                                소프트웨어를 제품의 핵심 요소로 연결해 차량과 서비스의 기능을 지속적으로 발전시킵니다. 제품이 출시된 이후에도 업데이트를 통해 새로운 기능과 개선된 사용자 경험을 제공합니다.
+                            </p>
+                        </div>
+
+                        <div class="what_item what_item3">
+                            <div class="what_item_img"></div>
+                            <span class="what_item_name">Manufacturing · 제조</span>
+                            <p class="what_item_desc">
+                                제품을 설계하는 단계부터 실제 생산 과정까지 함께 고려하며 효율적인 제조 방식을 구축합니다. 대규모 생산을 가능하게 하는 공정과 제조 기술을 지속적으로 개선하며 아이디어를 실제 제품으로 완성합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="what_divider"></span>
+
+                    <div class="what_right">
+                        <h2 class="what_title">WHAT<br>WE DO</h2>
+                        <p class="what_lead">아이디어를 현실로</p>
+                        <div class="what_desc">
+                            <p>Tesla는 하나의 아이디어가 실제 제품이 되기까지 필요한 기술과 과정을 직접 연결합니다.</p>
+                            <p>엔지니어링부터 소프트웨어, 제조까지 각 영역을 긴밀하게 연결해 제품을 빠르게 개발하고 개선하며, 새로운 기술이 아이디어에 머무르지 않고 실제 경험으로 이어질 수 있도록 만들어갑니다.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-
-        <div class="section-gap-2-3"></div>
-
-        <!-- ============ 3. FOUR VALUES ============ -->
-        <div class="values-wrap" id="valuesWrap">
-            <div class="values-inner">
-                <div class="values-sticky-text">
-                    <h2 class="values-title" id="valuesTitle">FOUR VALUES<br>ONE STANDARD</h2>
-                    <p class="values-sub">네 가지 가치, 하나의 기준.</p>
-                </div>
-
-                <div class="value-card card-insight" id="cardInsight">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1556760544-74068565f05c?w=500&q=80" alt="Insight">
-                    </div>
-                    <span class="value-card-name">INSIGHT</span>
-                    <p class="value-card-desc">빠르게 변화하는 시장 속에서 보이지 않는 니즈를 포착하고, 소비자가 반응하는 제품으로 구현합니다.</p>
-                </div>
-
-                <div class="value-card card-param" id="cardParam">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500&q=80" alt="Parametrization">
-                    </div>
-                    <span class="value-card-name">PARAMETRIZATION</span>
-                    <p class="value-card-desc">사용감과 효능을 설계 파라미터로 전환해 데이터로 해석·비교되는 환경까지 반영합니다.</p>
-                </div>
-
-                <div class="value-card card-exec" id="cardExec">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&q=80" alt="Execution">
-                    </div>
-                    <span class="value-card-name">EXECUTION</span>
-                    <p class="value-card-desc">설계된 제품이 실제로 동일하게 구현되도록 일관된 품질을 안정적으로 유지합니다.</p>
-                </div>
-
-                <div class="value-card card-perf" id="cardPerf">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Performance">
-                    </div>
-                    <span class="value-card-name">PERFORMANCE</span>
-                    <p class="value-card-desc">제품은 결국 시장에서 평가됩니다. 우리는 반복적으로 성과를 만들어내는 제품을 구현합니다.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-gap-3-4"></div>
-
-        <!-- ============ 4. MAKE MORE THAN PRODUCTS ============ -->
-        <section class="co-make">
-            <div class="co-make-inner">
-                <h2 class="co-make-title" id="makeTitle">
-                    MAKE MORE<br>THAN PRODUCTS
-                </h2>
-
-                <div class="co-make-upper">
-                    <div class="co-make-left">
-                        <div class="co-make-img-wrap" id="makeImgWrap">
-                            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" class="co-make-img is-active" alt="">
-                            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80" class="co-make-img" alt="">
-                            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80" class="co-make-img" alt="">
-                        </div>
-                    </div>
-
-                    <div class="co-make-right">
-                        <div class="co-make-top">
-                            <p class="co-make-heading">우리는 제품을 만들지만,<br>그 이상의 결과를 만듭니다.</p>
-                            <p class="co-make-body">더 나은 품질과 경험을 통해 시장에서 의미 있는 변화를 만들어가는 사람들입니다.</p>
-                        </div>
-
-                        <ul class="co-make-list" id="makeList">
-                            <li class="co-make-item is-active" data-index="0">
-                                <div class="co-make-item-row">
-                                    <div class="co-make-item-left-col">
-                                        <span class="co-make-item-title">변화를 읽고 앞서 움직입니다.</span>
-                                    </div>
-                                    <p class="co-make-item-desc">시장과 트렌드를 빠르게 읽고, 새로운 시도로 결과를 만들어냅니다.</p>
-                                </div>
-                                <div class="co-make-item-divider"></div>
-                            </li>
-                            <li class="co-make-item" data-index="1">
-                                <div class="co-make-item-row">
-                                    <div class="co-make-item-left-col">
-                                        <span class="co-make-item-title">기준을 지키며 결과를 만듭니다.</span>
-                                    </div>
-                                    <p class="co-make-item-desc">원칙과 품질 기준을 흔들림 없이 유지하고, 결과로 신뢰를 만듭니다.</p>
-                                </div>
-                                <div class="co-make-item-divider"></div>
-                            </li>
-                            <li class="co-make-item" data-index="2">
-                                <div class="co-make-item-row">
-                                    <div class="co-make-item-left-col">
-                                        <span class="co-make-item-title">고객을 이해하고 연결합니다.</span>
-                                    </div>
-                                    <p class="co-make-item-desc">고객의 관점에서 생각하고, 더 나은 경험과 가치로 이어지게 합니다.</p>
-                                </div>
-                                <div class="co-make-item-divider"></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="co-way">
-                    <h3 class="co-way-title">OUR WAY OF WORK</h3>
-                    <div class="co-way-cards" id="wayCards">
-                        <div class="co-way-card" data-delay="0">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&q=80" class="co-way-card-img" alt="COLLABORATION">
-                            </div>
-                            <span class="co-way-card-name">COLLABORATION</span>
-                            <p class="co-way-card-desc">함께 더 나은 결과를 만들어내는 방식</p>
-                        </div>
-                        <div class="co-way-card" data-delay="120">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500&q=80" class="co-way-card-img" alt="CUSTOMER FOCUS">
-                            </div>
-                            <span class="co-way-card-name">CUSTOMER FOCUS</span>
-                            <p class="co-way-card-desc">고객을 기준으로 판단하는 관점</p>
-                        </div>
-                        <div class="co-way-card" data-delay="240">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80" class="co-way-card-img" alt="OWNERSHIP">
-                            </div>
-                            <span class="co-way-card-name">OWNERSHIP</span>
-                            <p class="co-way-card-desc">결과에 끝까지 책임지는 태도</p>
-                        </div>
-                        <div class="co-way-card" data-delay="360">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&q=80" class="co-way-card-img" alt="PRODUCTIVITY">
-                            </div>
-                            <span class="co-way-card-name">PRODUCTIVITY</span>
-                            <p class="co-way-card-desc">속도와 완성도를 동시에 높이는 실행력</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="end-spacer">— 끝 —</div>
-
-        <div class="progress-badge" id="progressBadge">progress: 0%</div>
-        <div class="its-hint">← 카드를 드래그해서 넘겨보세요 →</div>
     </main>
 
 
@@ -229,7 +136,7 @@
                 <nav class="footer_gnb">
                     <ul>
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="#">Technology</a></li>
+                        <li><a href="./technology.html">Technology</a></li>
                         <li><a href="#">Vehicles</a></li>
                         <li><a href="#">Charging</a></li>
                     </ul>
