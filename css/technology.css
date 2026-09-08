@@ -1,483 +1,449 @@
 @charset "utf-8";
 
 /* =========================
-   About Page
+   Technology Page
 ========================= */
 
-/* 헤더(140px) 높이만큼의 여백을 main에 주면 그 구간이 스크롤로 먼저 지나가면서
-   히어로가 sticky로 고정되기 전에 페이지 전체가 살짝 밀려 올라가 보인다.
-   그래서 main 여백 대신 히어로 텍스트 안쪽에서 헤더 높이만큼 밀어준다. */
-
-/* Sub Page Header : 히어로 영상 기반 스크롤 트리거가 없는 서브페이지이므로
-   about 페이지에서만 헤더를 처음부터 다크 톤으로 고정한다. */
-header {
-    background: rgba(8, 8, 8, .82);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, .15);
+/* tesla ai */
+.tesla_ai_wrap {
+    padding: 200px 0;
 }
 
-
-/* =========================================================
-   1. HERO — 박스가 아래에서 올라와 타이틀→서브타이틀 순서로 덮음
-   ========================================================= */
-.hero {
-    position: relative;
-    height: calc(100vh + 200px);
-    background: #ffffff;
-}
-.hero-sticky {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
-}
-.hero-text {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+.tesla_ai_inner {
     max-width: 1392px;
-    height: calc(100% - 140px);
-    z-index: 1;
+    margin: 0 auto;
 }
-.subtitle {
-    position: absolute;
-    top: 14%;
-    right: 8%;
-    color: #111;
-    font-size: 20px;
-    letter-spacing: 0.05em;
-}
-.title {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    transform: translateX(-50%);
-    color: #111;
-    font-size: clamp(48px, 7vw, 96px);
-    font-weight: 800;
+
+
+/* top : main message */
+.tesla_ai_top {
+    max-width: 760px;
+    margin: 0 auto 100px;
     text-align: center;
-    transform-origin: center center;
-    transition: transform 0.2s linear;
-}
-.rising-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 800px;
-    background: #b3714f;
-    z-index: 2;
-    will-change: transform;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255,255,255,0.6);
-    font-size: 14px;
-    letter-spacing: 0.1em;
-}
-.progress-badge {
-    position: fixed;
-    bottom: 20px; left: 20px;
-    background: rgba(0,0,0,0.7);
-    color: #fff;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    z-index: 50;
-    font-family: monospace;
+    word-break: keep-all;
 }
 
-/* =========================================================
-   2. IDEA TO SHELF — 이중 stagger 타이틀 + 무한 드래그 캐러셀
-      (이 섹션만 자체 다크 테마)
-   ========================================================= */
-.its-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 40px;
-    background: #ffffff;
-    color: #111;
-}
-.its-inner {
-    width: 100%;
-    max-width: 1392px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 60px;
-}
-.its-left { flex: 1 1 320px; min-width: 280px; }
-
-.its-title {
-    font-size: clamp(32px, 4.5vw, 56px);
-    font-weight: 800;
-    line-height: 1.25;
-    letter-spacing: -0.01em;
-}
-.its-title .char {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-    transition: opacity 0.6s ease-out, filter 0.6s ease-out;
-}
-.its-title .line.is-done .char {
-    opacity: 1;
-    filter: blur(0px);
-}
-.its-sub {
-    margin-top: 20px;
-    color: rgba(0,0,0,0.6);
-    font-size: 15px;
-}
-
-.its-right {
-    flex: 2 1 480px;
-    min-width: 280px;
-    overflow: hidden;
-    cursor: grab;
-    user-select: none;
-}
-.its-right.dragging { cursor: grabbing; }
-
-.its-track {
-    display: flex;
-    gap: 20px;
-    will-change: transform;
-}
-.its-card {
-    flex: 0 0 700px;
-    width: 700px;
-}
-.its-card-img-wrap {
-    width: 700px;
-    height: 445px;
-    border-radius: 4px;
-    overflow: hidden;
-    background: #222;
-}
-.its-card-img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    filter: blur(14px);
-    transform: scale(1.08);
-    opacity: 0;
-    transition: filter 0.8s ease, transform 0.8s ease, opacity 0.5s ease;
-    pointer-events: none;
-}
-.its-card.is-visible .its-card-img {
-    filter: blur(0px);
-    transform: scale(1);
-    opacity: 1;
-}
-.its-card-info { margin-top: 16px; }
-.its-card-name {
+.tesla_ai_eyebrow {
     display: block;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-}
-.its-card-desc {
-    margin-top: 8px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: rgba(0,0,0,0.55);
-}
-.its-hint {
-    position: fixed;
-    bottom: 20px; right: 20px;
-    background: rgba(0,0,0,0.08);
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    color: rgba(0,0,0,0.6);
-    z-index: 50;
-}
-
-/* =========================================================
-   3. FOUR VALUES — 카드는 자연 스크롤, 텍스트만 sticky
-   ========================================================= */
-.section-gap-2-3 {
-    height: 200px;
-    background: #ffffff;
-}
-
-.values-wrap {
-    position: relative;
-    height: calc(316vh + 150vh);
-    background: #ffffff;
-    transition: background-color 0.4s ease;
-}
-.values-wrap.is-dark {
-    background: #121212;
-}
-.values-wrap.is-dark .values-sub {
-    color: rgba(255,255,255,0.6);
-}
-.values-wrap.is-dark .value-card-name,
-.values-wrap.is-dark .values-title {
-    color: #fff;
-}
-.values-wrap.is-dark .value-card-desc {
-    color: rgba(255,255,255,0.55);
-}
-.values-sticky-text {
-    position: sticky;
-    top: 50%;
-    transform: translateY(-50%);
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 5;
-    pointer-events: none;
-}
-.values-title {
-    font-size: clamp(32px, 5vw, 64px);
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    transition: color 0.4s ease;
-}
-.values-title .char {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-    transition: opacity 0.6s ease-out, filter 0.6s ease-out;
-}
-.values-title.is-done .char {
-    opacity: 1;
-    filter: blur(0px);
-}
-.values-sub {
-    margin-top: 14px;
-    font-size: 14px;
-    color: rgba(0,0,0,0.6);
-}
-.values-inner {
-    position: absolute;
-    inset: 0;
-    max-width: 1392px;
-    margin: 0 auto;
-}
-.value-card {
-    position: absolute;
-    width: 240px;
-}
-.card-insight { top: calc(4vh + 200px); left: 8%; }
-.card-param   { top: 108vh; right: 8%; }
-.card-exec    { top: 212vh; left: 8%; }
-.card-perf    { top: 316vh; right: 8%; }
-
-.value-card-img-wrap {
-    width: 100%;
-    height: 300px;
-    border-radius: 4px;
-    overflow: hidden;
-    background: #ddd;
-    position: relative;
-}
-.value-card-img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    filter: blur(14px);
-    transform: scale(1.08);
-    opacity: 0;
-    transition: filter 0.9s ease, transform 0.9s ease, opacity 0.5s ease;
-}
-.value-card.is-visible .value-card-img {
-    filter: blur(0px);
-    transform: scale(1);
-    opacity: 1;
-}
-.card-exec .value-card-img-wrap::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.45) 100%);
-    pointer-events: none;
-}
-.value-card-name {
-    display: block;
-    margin-top: 12px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-}
-.value-card-desc {
-    margin-top: 6px;
-    font-size: 12px;
-    line-height: 1.6;
-    color: rgba(0,0,0,0.55);
-}
-
-.end-spacer {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-}
-
-.section-gap-3-4 {
-    height: 200px;
-    background: #121212;
-}
-
-/* =========================================================
-   4. MAKE MORE THAN PRODUCTS — 자체 다크 테마
-   ========================================================= */
-.co-make {
-    padding: 100px 40px 110px;
-    background: #121212;
-    color: #fff;
-}
-.co-make-inner {
-    max-width: 1392px;
-    margin: 0 auto;
-}
-.co-make-title {
-    font-size: clamp(36px, 5.5vw, 68px);
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-}
-.co-make-title .char {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-    transition: opacity 0.6s ease-out, filter 0.6s ease-out;
-}
-.co-make-title.is-done .char {
-    opacity: 1;
-    filter: blur(0px);
-}
-.co-make-upper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-    margin-top: 60px;
-}
-.co-make-left { flex: 0 0 660px; max-width: 660px; }
-.co-make-img-wrap {
-    position: relative;
-    width: 660px;
-    height: 500px;
-    border-radius: 4px;
-    overflow: hidden;
-    background: #222;
-}
-.co-make-img {
-    position: absolute;
-    inset: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.6s ease;
-}
-.co-make-img.is-active { opacity: 1; }
-.co-make-right {
-    flex: 1 1 480px;
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.co-make-heading {
-    font-size: clamp(20px, 2.4vw, 28px);
-    font-weight: 700;
-    line-height: 1.5;
-}
-.co-make-body {
-    margin-top: 14px;
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.6);
-}
-.co-make-list { list-style: none; }
-.co-make-item { padding: 22px 0; cursor: pointer; }
-.co-make-item-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 40px;
-}
-.co-make-item-left-col {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-.co-make-item-title {
+    margin-bottom: 5px;
     font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.tesla_ai_title {
+    margin-bottom: 24px;
+    font-size: 36px;
     font-weight: 700;
-    color: rgba(255,255,255,0.55);
-    transition: color 0.3s ease;
-    white-space: nowrap;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
 }
-.co-make-item.is-active .co-make-item-title,
-.co-make-item:hover .co-make-item-title {
-    color: #fff;
+
+.tesla_ai_desc {
+    font-size: 18px;
+    line-height: 1.7;
+    word-break: keep-all;
 }
-.co-make-item-desc {
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(255,255,255,0.4);
-    text-align: right;
-    max-width: 420px;
+
+.tesla_ai_desc + .tesla_ai_desc {
+    margin-top: 24px;
 }
-.co-make-item-divider {
-    height: 1px;
-    background: rgba(255,255,255,0.12);
-    margin-top: 22px;
+
+
+/* bottom : 3 columns */
+.tesla_ai_cols {
+    display: flex;
 }
-.co-way { margin-top: 140px; }
-.co-way-title {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    color: rgba(255,255,255,0.5);
+
+.tesla_ai_col {
+    flex: 1;
+    padding: 0 30px;
+    word-break: keep-all;
 }
-.co-way-cards {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
+
+.tesla_ai_col:first-child {
+    padding-left: 0;
 }
-.co-way-card-img-wrap {
+
+.tesla_ai_col:last-child {
+    padding-right: 0;
+}
+
+.tesla_ai_col + .tesla_ai_col {
+    border-left: 1px solid rgba(170, 170, 170, .2);
+}
+
+.tesla_ai_col_visual {
     width: 100%;
-    aspect-ratio: 4 / 3;
-    border-radius: 4px;
-    overflow: hidden;
-    background: #222;
+    height: 380px;
+    margin-bottom: 24px;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
 }
-.co-way-card-img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    filter: blur(14px);
-    transform: scale(1.08);
-    opacity: 0;
-    transition: filter 0.9s ease, transform 0.9s ease, opacity 0.5s ease;
-}
-.co-way-card.is-visible .co-way-card-img {
-    filter: blur(0px);
-    transform: scale(1);
-    opacity: 1;
-}
-.co-way-card-name {
+
+.tesla_ai_col_label {
     display: block;
-    margin-top: 14px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    margin-bottom: 12px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #999;
+    font-family: "Orbitron", sans-serif;
 }
-.co-way-card-desc {
-    margin-top: 6px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.5);
+
+.tesla_ai_col_title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tesla_ai_col_desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+/* fsd */
+.fsd_wrap {
+    padding: 200px 0;
+    background-color: #f2f2f2;
+}
+
+.fsd_inner {
+    max-width: 1392px;
+    margin: 0 auto;
+}
+
+.fsd_row {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.fsd_visual {
+    width: 760px;
+    height: 640px;
+    flex-shrink: 0;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.fsd_text {
+    flex: 1;
+    max-width: 480px;
+    word-break: keep-all;
+}
+
+.fsd_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.fsd_title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.fsd_desc {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.fsd_desc + .fsd_desc {
+    margin-top: 24px;
+}
+
+
+/* ai hardware */
+.ai_hardware_wrap {
+    padding: 200px 0;
+}
+
+.ai_hardware_inner {
+    max-width: 1392px;
+    margin: 0 auto;
+}
+
+.ai_hardware_top {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.ai_hardware_text {
+    flex: 1;
+    max-width: 480px;
+    word-break: keep-all;
+}
+
+.ai_hardware_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.ai_hardware_title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.ai_hardware_desc {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.ai_hardware_desc + .ai_hardware_desc {
+    margin-top: 24px;
+}
+
+.ai_hardware_visual {
+    width: 760px;
+    height: 640px;
+    flex-shrink: 0;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+
+/* bottom : 3 core info */
+.ai_hardware_cols {
+    display: flex;
+}
+
+.ai_hardware_col {
+    flex: 1;
+    padding: 0 30px;
+    word-break: keep-all;
+}
+
+.ai_hardware_col:first-child {
+    padding-left: 0;
+}
+
+.ai_hardware_col:last-child {
+    padding-right: 0;
+}
+
+.ai_hardware_col + .ai_hardware_col {
+    border-left: 1px solid rgba(170, 170, 170, .2);
+}
+
+.ai_hardware_col_label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Orbitron", sans-serif;
+}
+
+.ai_hardware_col_desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+/* autonomy */
+.autonomy_wrap {
+    padding: 200px 0;
+}
+
+.autonomy_inner {
+    max-width: 1392px;
+    margin: 0 auto;
+}
+
+
+/* top : main message */
+.autonomy_top {
+    max-width: 760px;
+    margin: 0 auto 120px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.autonomy_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.autonomy_title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.autonomy_desc {
+    font-size: 18px;
+    line-height: 1.7;
+    word-break: keep-all;
+}
+
+.autonomy_desc + .autonomy_desc {
+    margin-top: 24px;
+}
+
+
+/* robotaxi / robovan rows */
+.autonomy_row {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.autonomy_row + .autonomy_row {
+    margin-top: 120px;
+}
+
+.autonomy_row_reverse {
+    flex-direction: row-reverse;
+}
+
+.autonomy_visual {
+    flex-shrink: 0;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.autonomy_visual_robotaxi {
+    width: 760px;
+    height: 520px;
+}
+
+.autonomy_visual_robovan {
+    width: 700px;
+    height: 580px;
+}
+
+.autonomy_text {
+    flex: 1;
+    max-width: 380px;
+    word-break: keep-all;
+}
+
+.autonomy_keyword {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Orbitron", sans-serif;
+}
+
+.autonomy_row_desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* optimus */
+.optimus_wrap {
+    padding: 200px 0;
+    background-color: #f2f2f2;
+}
+
+.optimus_inner {
+    max-width: 1392px;
+    margin: 0 auto;
+}
+
+.optimus_top {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.optimus_visual {
+    width: 760px;
+    height: 640px;
+    flex-shrink: 0;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.optimus_text {
+    flex: 1;
+    max-width: 480px;
+    word-break: keep-all;
+}
+
+.optimus_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.optimus_title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.optimus_desc {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.optimus_desc + .optimus_desc {
+    margin-top: 24px;
+}
+
+
+/* bottom : 3 core info */
+.optimus_cols {
+    display: flex;
+}
+
+.optimus_col {
+    flex: 1;
+    padding: 0 30px;
+    word-break: keep-all;
+}
+
+.optimus_col:first-child {
+    padding-left: 0;
+}
+
+.optimus_col:last-child {
+    padding-right: 0;
+}
+
+.optimus_col + .optimus_col {
+    border-left: 1px solid rgba(170, 170, 170, .2);
+}
+
+.optimus_col_label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Orbitron", sans-serif;
+}
+
+.optimus_col_desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
 }

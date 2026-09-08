@@ -15,8 +15,6 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/technology.css">
-
-    <script src="./script/technology.js" defer></script>
 </head>
 
 <body>
@@ -31,10 +29,10 @@
             <nav class="gnb">
                 <h2 class="screen_out">주메뉴영역</h2>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./about.html">About</a></li>
                     <li><a href="./technology.html">Technology</a></li>
                     <li><a href="#">Vehicles</a></li>
-                    <li><a href="#">Charging</a></li>
+                    <li><a href="./charging.html">Charging</a></li>
                 </ul>
 
             </nav>
@@ -44,175 +42,240 @@
 
 
     <main>
-        <!-- ============ 1. HERO ============ -->
-        <section class="hero" id="hero">
-            <div class="hero-sticky">
-                <div class="hero-text">
-                    <p class="subtitle" id="subtitle">서브타이틀</p>
-                    <h1 class="title" id="title">메인타이틀</h1>
+        <section class="tesla_ai_wrap">
+            <div class="tesla_ai_inner">
+
+                <div class="tesla_ai_top">
+                    <span class="tesla_ai_eyebrow">TESLA AI</span>
+                    <h2 class="tesla_ai_title">현실 세계를 이해하는 AI</h2>
+                    <p class="tesla_ai_desc">
+                        Tesla의 자율 기술은 차량에 장착된 카메라에서 시작됩니다.
+                    </p>
+                    <p class="tesla_ai_desc">
+                        각 카메라에서 입력되는 영상은 신경망을 통해 분석되며, 객체와 도로 구조, 주변 환경과 깊이 등의 정보를 파악하는 데 사용됩니다.
+                    </p>
+                    <p class="tesla_ai_desc">
+                        여러 카메라의 영상은 함께 처리되어 차량 주변의 도로 구조와 고정된 인프라, 3차원 객체를 이해하는 데 활용됩니다.
+                    </p>
+                    <p class="tesla_ai_desc">
+                        이렇게 인식한 현실 세계를 기반으로 Tesla의 시스템은 차량이 이동할 경로를 계획하고 복잡하고 불확실한 실제 도로 환경에서 필요한 판단을 수행합니다.
+                    </p>
+                    <p class="tesla_ai_desc">
+                        Tesla는 이러한 비전 및 플래닝 중심의 AI와 효율적인 추론 하드웨어를 결합하는 방식을 차량의 자율 주행뿐 아니라 이족 보행 로봇과 같은 현실 세계의 AI 시스템으로 확장하고 있습니다.
+                    </p>
                 </div>
-                <div class="rising-box" id="risingBox">IMAGE PLACEHOLDER (100vh - 200px)</div>
+
+                <div class="tesla_ai_cols">
+
+                    <div class="tesla_ai_col">
+                        <div class="tesla_ai_col_visual"></div>
+                        <span class="tesla_ai_col_label">PERCEPTION</span>
+                        <h3 class="tesla_ai_col_title">보고 이해하다</h3>
+                        <p class="tesla_ai_col_desc">
+                            카메라에서 들어오는 영상을 분석해 도로와 주변 객체, 공간 정보를 파악합니다.
+                        </p>
+                    </div>
+
+                    <div class="tesla_ai_col">
+                        <div class="tesla_ai_col_visual"></div>
+                        <span class="tesla_ai_col_label">PLANNING</span>
+                        <h3 class="tesla_ai_col_title">판단하고 계획하다</h3>
+                        <p class="tesla_ai_col_desc">
+                            인지한 공간을 기반으로 실제 환경의 불확실성을 고려하며 차량이 이동할 궤적과 행동을 결정합니다.
+                        </p>
+                    </div>
+
+                    <div class="tesla_ai_col">
+                        <div class="tesla_ai_col_visual"></div>
+                        <span class="tesla_ai_col_label">CONTROL</span>
+                        <h3 class="tesla_ai_col_title">현실에서 움직이다</h3>
+                        <p class="tesla_ai_col_desc">
+                            AI가 내린 판단을 차량의 움직임으로 연결해 실제 도로 환경에서 주행을 수행할 수 있도록 합니다.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
         </section>
 
-        <!-- ============ 2. IDEA TO SHELF ============ -->
-        <section class="its-section">
-            <div class="its-inner">
-                <div class="its-left">
-                    <h2 class="its-title" id="itsTitle">
-                        <span class="line" data-delay="0">IDEA TO SHELF</span><br>
-                        <span class="line" data-delay="200">EVERY STEP,</span><br>
-                        <span class="line" data-delay="400">OURS</span>
-                    </h2>
-                    <p class="its-sub">아이디어에서 진열대까지, 모든 단계를 우리가 함께.</p>
-                </div>
+        <section class="fsd_wrap">
+            <div class="fsd_inner">
+                <div class="fsd_row">
 
-                <div class="its-right" id="carousel">
-                    <div class="its-track" id="track"></div>
-                </div>
-            </div>
-        </section>
+                    <div class="fsd_visual"></div>
 
-        <div class="section-gap-2-3"></div>
-
-        <!-- ============ 3. FOUR VALUES ============ -->
-        <div class="values-wrap" id="valuesWrap">
-            <div class="values-inner">
-                <div class="values-sticky-text">
-                    <h2 class="values-title" id="valuesTitle">FOUR VALUES<br>ONE STANDARD</h2>
-                    <p class="values-sub">네 가지 가치, 하나의 기준.</p>
-                </div>
-
-                <div class="value-card card-insight" id="cardInsight">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1556760544-74068565f05c?w=500&q=80" alt="Insight">
-                    </div>
-                    <span class="value-card-name">INSIGHT</span>
-                    <p class="value-card-desc">빠르게 변화하는 시장 속에서 보이지 않는 니즈를 포착하고, 소비자가 반응하는 제품으로 구현합니다.</p>
-                </div>
-
-                <div class="value-card card-param" id="cardParam">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500&q=80" alt="Parametrization">
-                    </div>
-                    <span class="value-card-name">PARAMETRIZATION</span>
-                    <p class="value-card-desc">사용감과 효능을 설계 파라미터로 전환해 데이터로 해석·비교되는 환경까지 반영합니다.</p>
-                </div>
-
-                <div class="value-card card-exec" id="cardExec">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&q=80" alt="Execution">
-                    </div>
-                    <span class="value-card-name">EXECUTION</span>
-                    <p class="value-card-desc">설계된 제품이 실제로 동일하게 구현되도록 일관된 품질을 안정적으로 유지합니다.</p>
-                </div>
-
-                <div class="value-card card-perf" id="cardPerf">
-                    <div class="value-card-img-wrap">
-                        <img class="value-card-img" src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Performance">
-                    </div>
-                    <span class="value-card-name">PERFORMANCE</span>
-                    <p class="value-card-desc">제품은 결국 시장에서 평가됩니다. 우리는 반복적으로 성과를 만들어내는 제품을 구현합니다.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-gap-3-4"></div>
-
-        <!-- ============ 4. MAKE MORE THAN PRODUCTS ============ -->
-        <section class="co-make">
-            <div class="co-make-inner">
-                <h2 class="co-make-title" id="makeTitle">
-                    MAKE MORE<br>THAN PRODUCTS
-                </h2>
-
-                <div class="co-make-upper">
-                    <div class="co-make-left">
-                        <div class="co-make-img-wrap" id="makeImgWrap">
-                            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" class="co-make-img is-active" alt="">
-                            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80" class="co-make-img" alt="">
-                            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80" class="co-make-img" alt="">
-                        </div>
+                    <div class="fsd_text">
+                        <span class="fsd_eyebrow">FSD</span>
+                        <h2 class="fsd_title">주행을 이해하고 판단하는 기술</h2>
+                        <p class="fsd_desc">
+                            풀 셀프 드라이빙(감독형)은 Tesla가 개발하고 있는 운전자 보조 기술로, 차량의 카메라와 AI 기반 소프트웨어를 활용해 주변 환경을 인식하고 실제 도로에서 필요한 주행 판단을 수행합니다.
+                        </p>
+                        <p class="fsd_desc">
+                            Tesla의 신경망은 카메라에서 입력되는 영상을 분석해 도로 구조와 주변 객체를 이해하고, 자율 주행 알고리즘은 공간과 시간에 걸친 정보를 바탕으로 차량이 이동할 궤적을 계획합니다.
+                        </p>
+                        <p class="fsd_desc">
+                            이 과정에서 인식과 판단, 경로 계획, 차량 제어가 하나의 시스템으로 연결되며 Tesla는 실제 차량 플릿과 평가 인프라를 활용해 관련 알고리즘을 지속적으로 검증하고 발전시키고 있습니다.
+                        </p>
+                        <p class="fsd_desc">
+                            현재 제공되는 풀 셀프 드라이빙은 감독형 시스템으로 운전자의 적극적인 감독이 필요하며 차량을 완전 자율주행 차량으로 만드는 기능은 아닙니다.
+                        </p>
                     </div>
 
-                    <div class="co-make-right">
-                        <div class="co-make-top">
-                            <p class="co-make-heading">우리는 제품을 만들지만,<br>그 이상의 결과를 만듭니다.</p>
-                            <p class="co-make-body">더 나은 품질과 경험을 통해 시장에서 의미 있는 변화를 만들어가는 사람들입니다.</p>
-                        </div>
-
-                        <ul class="co-make-list" id="makeList">
-                            <li class="co-make-item is-active" data-index="0">
-                                <div class="co-make-item-row">
-                                    <div class="co-make-item-left-col">
-                                        <span class="co-make-item-title">변화를 읽고 앞서 움직입니다.</span>
-                                    </div>
-                                    <p class="co-make-item-desc">시장과 트렌드를 빠르게 읽고, 새로운 시도로 결과를 만들어냅니다.</p>
-                                </div>
-                                <div class="co-make-item-divider"></div>
-                            </li>
-                            <li class="co-make-item" data-index="1">
-                                <div class="co-make-item-row">
-                                    <div class="co-make-item-left-col">
-                                        <span class="co-make-item-title">기준을 지키며 결과를 만듭니다.</span>
-                                    </div>
-                                    <p class="co-make-item-desc">원칙과 품질 기준을 흔들림 없이 유지하고, 결과로 신뢰를 만듭니다.</p>
-                                </div>
-                                <div class="co-make-item-divider"></div>
-                            </li>
-                            <li class="co-make-item" data-index="2">
-                                <div class="co-make-item-row">
-                                    <div class="co-make-item-left-col">
-                                        <span class="co-make-item-title">고객을 이해하고 연결합니다.</span>
-                                    </div>
-                                    <p class="co-make-item-desc">고객의 관점에서 생각하고, 더 나은 경험과 가치로 이어지게 합니다.</p>
-                                </div>
-                                <div class="co-make-item-divider"></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="co-way">
-                    <h3 class="co-way-title">OUR WAY OF WORK</h3>
-                    <div class="co-way-cards" id="wayCards">
-                        <div class="co-way-card" data-delay="0">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&q=80" class="co-way-card-img" alt="COLLABORATION">
-                            </div>
-                            <span class="co-way-card-name">COLLABORATION</span>
-                            <p class="co-way-card-desc">함께 더 나은 결과를 만들어내는 방식</p>
-                        </div>
-                        <div class="co-way-card" data-delay="120">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500&q=80" class="co-way-card-img" alt="CUSTOMER FOCUS">
-                            </div>
-                            <span class="co-way-card-name">CUSTOMER FOCUS</span>
-                            <p class="co-way-card-desc">고객을 기준으로 판단하는 관점</p>
-                        </div>
-                        <div class="co-way-card" data-delay="240">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80" class="co-way-card-img" alt="OWNERSHIP">
-                            </div>
-                            <span class="co-way-card-name">OWNERSHIP</span>
-                            <p class="co-way-card-desc">결과에 끝까지 책임지는 태도</p>
-                        </div>
-                        <div class="co-way-card" data-delay="360">
-                            <div class="co-way-card-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&q=80" class="co-way-card-img" alt="PRODUCTIVITY">
-                            </div>
-                            <span class="co-way-card-name">PRODUCTIVITY</span>
-                            <p class="co-way-card-desc">속도와 완성도를 동시에 높이는 실행력</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="end-spacer">— 끝 —</div>
+        <section class="ai_hardware_wrap">
+            <div class="ai_hardware_inner">
 
-        <div class="progress-badge" id="progressBadge">progress: 0%</div>
-        <div class="its-hint">← 카드를 드래그해서 넘겨보세요 →</div>
+                <div class="ai_hardware_top">
+
+                    <div class="ai_hardware_text">
+                        <span class="ai_hardware_eyebrow">AI HARDWARE</span>
+                        <h2 class="ai_hardware_title">AI를 위해 설계된 하드웨어</h2>
+                        <p class="ai_hardware_desc">
+                            복잡한 AI 모델이 차량에서 실시간으로 작동하기 위해서는 이를 처리할 수 있는 전용 하드웨어가 필요합니다.
+                        </p>
+                        <p class="ai_hardware_desc">
+                            Tesla는 풀 셀프 드라이빙 소프트웨어를 실행하기 위한 AI 추론 칩을 직접 개발하며, 높은 연산 성능과 전력 효율, 시스템의 이중화를 고려해 하드웨어를 설계합니다.
+                        </p>
+                        <p class="ai_hardware_desc">
+                            칩 개발 과정에서는 타이밍과 전력, 성능을 분석하고 다양한 테스트를 통해 기능을 검증합니다. 이후 실제 실리콘을 검증해 Tesla 차량에서 대량 생산할 수 있는 단계까지 개발을 이어갑니다.
+                        </p>
+                        <p class="ai_hardware_desc">
+                            소프트웨어 역시 Tesla 전용 하드웨어와 긴밀하게 통합되어 있으며 처리량과 지연 시간, 정확성, 일관된 동작을 핵심 지표로 시스템을 최적화합니다.
+                        </p>
+                    </div>
+
+                    <div class="ai_hardware_visual"></div>
+
+                </div>
+
+                <div class="ai_hardware_cols">
+
+                    <div class="ai_hardware_col">
+                        <span class="ai_hardware_col_label">AI INFERENCE CHIP</span>
+                        <p class="ai_hardware_col_desc">
+                            풀 셀프 드라이빙 소프트웨어의 AI 연산을 처리하기 위해 설계된 전용 하드웨어
+                        </p>
+                    </div>
+
+                    <div class="ai_hardware_col">
+                        <span class="ai_hardware_col_label">PERFORMANCE / WATT</span>
+                        <p class="ai_hardware_col_desc">
+                            차량 환경에서 높은 연산 성능과 전력 효율을 함께 고려한 설계
+                        </p>
+                    </div>
+
+                    <div class="ai_hardware_col">
+                        <span class="ai_hardware_col_label">HARDWARE + SOFTWARE</span>
+                        <p class="ai_hardware_col_desc">
+                            AI 소프트웨어와 전용 하드웨어를 긴밀하게 통합해 하나의 시스템으로 최적화
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="autonomy_wrap">
+            <div class="autonomy_inner">
+
+                <div class="autonomy_top">
+                    <span class="autonomy_eyebrow">AUTONOMY</span>
+                    <h2 class="autonomy_title">운전자가 없는 이동을 향해</h2>
+                    <p class="autonomy_desc">
+                        Tesla는 현재의 운전자 보조 기술을 넘어 차량과 로봇이 스스로 이동할 수 있는 자율 기술을 개발하고 있습니다.
+                    </p>
+                    <p class="autonomy_desc">
+                        Tesla가 공개한 자율주행 비전에는 개인화된 이동을 위한 Robotaxi와 여러 사람 또는 물품을 운송하기 위한 Robovan이 포함됩니다.
+                    </p>
+                    <p class="autonomy_desc">
+                        Tesla는 자율주행 전기차가 기존 개인 차량보다 더 많은 시간 동안 활용될 수 있으며, 이를 통해 이동 효율을 높이고 필요한 주차 공간을 줄이는 미래를 제시하고 있습니다.
+                    </p>
+                    <p class="autonomy_desc">
+                        차량을 소유하고 직접 운전하는 기존의 이동 방식에서 나아가, 필요할 때 자율주행 차량을 이용해 사람과 물품이 이동하는 새로운 교통 시스템으로 기술의 범위를 확장하고 있습니다.
+                    </p>
+                </div>
+
+                <div class="autonomy_row">
+                    <div class="autonomy_visual autonomy_visual_robotaxi"></div>
+                    <div class="autonomy_text">
+                        <span class="autonomy_keyword">ROBOTAXI</span>
+                        <p class="autonomy_row_desc">
+                            차량을 호출해 출퇴근이나 일상적인 이동 등에 사용할 수 있도록 개발되는 자율 이동 수단
+                        </p>
+                    </div>
+                </div>
+
+                <div class="autonomy_row autonomy_row_reverse">
+                    <div class="autonomy_text">
+                        <span class="autonomy_keyword">ROBOVAN</span>
+                        <p class="autonomy_row_desc">
+                            대량 운송부터 다양한 산업 영역까지 여러 사람 또는 물품의 자율 운송을 지원하도록 제시된 이동 수단
+                        </p>
+                    </div>
+                    <div class="autonomy_visual autonomy_visual_robovan"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="optimus_wrap">
+            <div class="optimus_inner">
+
+                <div class="optimus_top">
+
+                    <div class="optimus_visual"></div>
+
+                    <div class="optimus_text">
+                        <span class="optimus_eyebrow">OPTIMUS</span>
+                        <h2 class="optimus_title">차량에서 시작된 AI, 로봇으로</h2>
+                        <p class="optimus_desc">
+                            Tesla가 개발하는 AI 기술은 도로 위의 차량에만 머물지 않습니다.
+                        </p>
+                        <p class="optimus_desc">
+                            Tesla Optimus는 안전하지 않거나 반복적이거나 지루한 작업을 수행할 수 있는 범용 이족 보행 휴머노이드 로봇을 목표로 개발되고 있습니다.
+                        </p>
+                        <p class="optimus_desc">
+                            사람과 같은 현실 세계에서 작동하기 위해서는 주변 환경을 인식하는 것뿐 아니라 균형을 유지하고 공간을 탐색하며 물리적 환경과 상호작용할 수 있어야 합니다.
+                        </p>
+                        <p class="optimus_desc">
+                            이를 위해 Tesla는 딥러닝과 컴퓨터 비전, 모션 플래닝, 제어를 포함한 소프트웨어 및 로봇 시스템을 개발하고 있습니다. 차량을 위해 개발해 온 배터리, 전력 장치, 모터, 소프트웨어와 AI 관련 기술 역시 휴머노이드 로봇으로 확장되고 있습니다.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="optimus_cols">
+
+                    <div class="optimus_col">
+                        <span class="optimus_col_label">PERCEPTION</span>
+                        <p class="optimus_col_desc">
+                            주변 환경과 물체를 인식하고 현실 세계의 정보를 이해합니다.
+                        </p>
+                    </div>
+
+                    <div class="optimus_col">
+                        <span class="optimus_col_label">NAVIGATION</span>
+                        <p class="optimus_col_desc">
+                            균형을 유지하면서 공간을 탐색하고 이동할 수 있는 시스템을 개발합니다.
+                        </p>
+                    </div>
+
+                    <div class="optimus_col">
+                        <span class="optimus_col_label">INTERACTION</span>
+                        <p class="optimus_col_desc">
+                            물리적 환경과 상호작용하며 일상적이거나 반복적인 작업을 수행하는 것을 목표로 합니다.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
 
 
@@ -228,10 +291,10 @@
 
                 <nav class="footer_gnb">
                     <ul>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./about.html">About</a></li>
                         <li><a href="./technology.html">Technology</a></li>
                         <li><a href="#">Vehicles</a></li>
-                        <li><a href="#">Charging</a></li>
+                        <li><a href="./charging.html">Charging</a></li>
                     </ul>
                 </nav>
             </div>
