@@ -178,24 +178,25 @@ header.active .gnb li:nth-child(2){
 
 
 /* vehicles mega menu */
-.gnb_vehicles {
-    position: relative;
-}
-
+/* .mega_menu는 .gnb_vehicles가 아닌 position:relative인 .header_inner를 기준으로 위치를 잡는다.
+   header 전체 너비/높이에 맞춰 펼쳐지도록 하기 위함 (li 기준으로 잡으면 폭이 텍스트 크기로 좁아짐). */
 .mega_menu {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
 
-    background-color: #fff;
-    color: #333;
+    background: rgba(8, 8, 8, .82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    color: #fff;
 
     opacity: 0;
     visibility: hidden;
     transform: translateY(-12px);
     transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .15);
     z-index: 20;
 }
 
@@ -245,7 +246,7 @@ header.active .gnb li:nth-child(2){
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-    color: #333;
+    color: #fff;
 }
 
 main {}
