@@ -4,6 +4,59 @@
    Technology Page
 ========================= */
 
+/* intro (top visual + overlay text) */
+.tech_intro_wrap {
+    
+}
+
+.tech_intro_inner {
+    width: 100%;
+}
+
+.tech_intro_visual {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
+
+.tech_intro_text {
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+    min-width: 1500px;
+    max-width: 1392px;
+    word-break: keep-all;
+}
+
+.tech_intro_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.tech_intro_title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.tech_intro_desc {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.tech_intro_desc + .tech_intro_desc {
+    margin-top: 24px;
+}
+
+
 /* tesla ai */
 .tesla_ai_wrap {
     padding: 200px 0;
