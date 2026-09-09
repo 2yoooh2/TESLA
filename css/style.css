@@ -6,6 +6,21 @@
     box-sizing: border-box;
 }
 
+/* =========================
+   Layout grid (Figma reference)
+   Frame 1920 / 12 columns / column 94px / gutter 24px
+   Grid width 1392px (12 * 94 + 11 * 24) / side margin 264px
+   Use --grid-width as the common content max-width across all pages.
+========================= */
+:root {
+    --grid-frame: 1920px;
+    --grid-columns: 12;
+    --grid-column-width: 94px;
+    --grid-gutter: 24px;
+    --grid-width: 1392px;
+    --grid-margin: 264px;
+}
+
 ul,
 li {
     list-style: none;
@@ -161,6 +176,78 @@ header.active .gnb li:nth-child(2){
     margin-right: 165px;
 }
 
+
+/* vehicles mega menu */
+.gnb_vehicles {
+    position: relative;
+}
+
+.mega_menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: #fff;
+    color: #333;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
+
+    z-index: 20;
+}
+
+.gnb_vehicles:hover .mega_menu,
+.mega_menu:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity .3s ease, transform .3s ease, visibility 0s linear;
+}
+
+.mega_menu_inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+    padding: 56px 0;
+}
+
+.mega_menu_list {
+    display: flex;
+    gap: 24px;
+}
+
+.mega_menu_item {
+    flex: 1;
+}
+
+.mega_menu_item a {
+    display: block;
+}
+
+.mega_menu_visual {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.mega_menu_visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mega_menu_name {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+}
+
 main {}
 
 .visual_wrap {
@@ -171,7 +258,7 @@ main {}
 }
 
 .visual_inner {
-    max-width: 1392px;
+    max-width: var(--grid-width);
     height: 100%;
     margin: 0 auto;
 }
@@ -199,7 +286,7 @@ main {}
 }
 
 .visual_heading {
-    width: 1392px;
+    width: var(--grid-width);
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -269,7 +356,7 @@ main {}
     margin-top: 20px;
     width: 430px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.4;
     word-break: keep-all;
 }
 
@@ -321,7 +408,7 @@ main {}
 }
 
 .fsd_inner {
-    max-width: 1392px;
+    max-width: var(--grid-width);
     margin: 0 auto;
 }
 
@@ -343,7 +430,7 @@ main {}
 
 .fsd_desc {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.4;
 }
 
 .fsd_content {
@@ -436,7 +523,7 @@ main {}
 }
 
 .safety_heading {
-    width: 1392px;
+    width: var(--grid-width);
     height: 100%;
     position: absolute;
     top: 0;
@@ -465,7 +552,7 @@ main {}
 
 .safety_desc {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.4;
     width: 400px;
     word-break: keep-all;
     margin-left: auto;
@@ -600,7 +687,7 @@ main {}
 
 .software_desc{
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.4;
 }
 
 .software_card{
@@ -672,7 +759,7 @@ main {}
 
 .software_item_text p{
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.4;
 }
 
 
@@ -766,7 +853,7 @@ main {}
 
 .lineup_desc {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .lineup_bg {
@@ -856,7 +943,7 @@ main {}
 
 .lineup_text {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .lineup_spec {
@@ -975,7 +1062,7 @@ main {}
 
 .charger_contents{
     width: 100%;
-    max-width: 1392px;
+    max-width: var(--grid-width);
     height: 100%;
     margin: 0 auto;
 
@@ -1008,7 +1095,7 @@ main {}
 
 .charger_desc{
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.4;
 }
 
 .charger_list{
@@ -1093,6 +1180,7 @@ main {}
 .charger_item p{
     margin-top: 10px;
     font-size: 18px;
+    line-height: 1.4;
     font-weight: bold;
 }
 
@@ -1104,7 +1192,7 @@ main {}
     height: 100%;
 }
 .quick_inner{
-    max-width: 1392px;
+    max-width: var(--grid-width);
     margin: 0 auto;
 }
 .quick_title{
@@ -1115,7 +1203,7 @@ main {}
 }
 .quick_list{
     display: flex;
-    gap: 100px;
+    gap: 96px;
     justify-content: center;
 }
 .quick_item{
@@ -1150,6 +1238,7 @@ main {}
 }
 .quick_item a span{
     font-size: 18px;
+    line-height: 1.4;
 }
 
 
@@ -1161,7 +1250,7 @@ footer {
 }
 
 .footer_inner {
-    max-width: 1392px;
+    max-width: var(--grid-width);
     margin: 0 auto;
     padding: 96px 0 48px;
 }

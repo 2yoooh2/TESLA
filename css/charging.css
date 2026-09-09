@@ -4,21 +4,75 @@
    Charging Page
 ========================= */
 
+/* intro (top visual + overlay text) */
+.charging_intro_wrap {
+
+}
+
+.charging_intro_inner {
+    width: 100%;
+}
+
+.charging_intro_visual {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
+
+.charging_intro_text {
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    min-width: 1500px;
+    max-width: var(--grid-width);
+    word-break: keep-all;
+}
+
+.charging_intro_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.charging_intro_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.charging_intro_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.charging_intro_desc + .charging_intro_desc {
+    margin-top: 20px;
+}
+
+
 /* home charging */
 .home_charging_wrap {
     padding: 200px 0;
 }
 
 .home_charging_inner {
-    max-width: 1392px;
+    max-width: var(--grid-width);
     margin: 0 auto;
 }
 
 
 /* top : main message */
 .home_charging_top {
-    max-width: 620px;
-    margin-bottom: 120px;
+    text-align: center;
+    margin-bottom: 50px;
     word-break: keep-all;
 }
 
@@ -40,12 +94,8 @@
 
 .home_charging_desc {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
     word-break: keep-all;
-}
-
-.home_charging_desc + .home_charging_desc {
-    margin-top: 16px;
 }
 
 
@@ -53,7 +103,7 @@
 .home_charging_row {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 96px;
 }
 
 .home_charging_visual {
@@ -73,7 +123,7 @@
 }
 
 .home_charging_item_title {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
 }
@@ -96,7 +146,7 @@
 }
 
 .supercharger_inner {
-    max-width: 1392px;
+    max-width: var(--grid-width);
     margin: 0 auto;
 }
 
@@ -141,12 +191,8 @@
 .supercharger_desc {
     max-width: 420px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
     word-break: keep-all;
-}
-
-.supercharger_desc + .supercharger_desc {
-    margin-top: 16px;
 }
 
 
@@ -156,7 +202,7 @@
 }
 
 .trip_planner_inner {
-    max-width: 1392px;
+    max-width: var(--grid-width);
     margin: 0 auto;
 }
 
@@ -164,7 +210,7 @@
 /* top : main message */
 .trip_planner_top {
     max-width: 620px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     word-break: keep-all;
 }
 
@@ -186,12 +232,8 @@
 
 .trip_planner_desc {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
     word-break: keep-all;
-}
-
-.trip_planner_desc + .trip_planner_desc {
-    margin-top: 16px;
 }
 
 
@@ -199,7 +241,7 @@
 .trip_planner_visual {
     width: 100%;
     height: 640px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     background-color: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, .08);
 }
@@ -230,15 +272,15 @@
 
 .trip_planner_col_label {
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     font-size: 14px;
     letter-spacing: 0.05em;
-    color: #999;
+    color: #E82127;
     font-family: "Orbitron", sans-serif;
 }
 
 .trip_planner_col_title {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
 }
@@ -257,18 +299,19 @@
 }
 
 .tesla_app_inner {
-    max-width: 1392px;
+    max-width: var(--grid-width);
     margin: 0 auto;
 }
 
 .tesla_app_row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
 }
 
 .tesla_app_text {
-    width: 460px;
+    width: 448px;
     flex-shrink: 0;
     word-break: keep-all;
 }
@@ -291,12 +334,12 @@
 
 .tesla_app_desc {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .tesla_app_sub_title {
     margin-top: 56px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
 }
@@ -313,4 +356,56 @@
     flex-shrink: 0;
     background-color: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, .08);
+}
+
+
+/* charge anywhere (closing visual) */
+.charge_anywhere_wrap {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #d9d9d9;
+    border-top: 1px solid rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
+
+.charge_anywhere_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 684px;
+    padding: 0 40px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.charge_anywhere_eyebrow {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.charge_anywhere_title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.charge_anywhere_keyword {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    font-family: "Orbitron", sans-serif;
+}
+
+.charge_anywhere_desc {
+    font-size: 18px;
+    line-height: 1.4;
 }
