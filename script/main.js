@@ -522,7 +522,7 @@ function renderHeaderScroll() {
 
     if (window.scrollY >= triggerPoint) {
         header.classList.add("active");
-        headerLogo.src = "./img/tesla_t_logo.svg";
+        headerLogo.src = "./img/tesla_t_logo.png";
     } else {
         header.classList.remove("active");
         headerLogo.src = "./img/tesla_logo.svg";
