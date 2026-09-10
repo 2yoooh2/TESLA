@@ -83,9 +83,20 @@ header{
     top: 0;
     left: 0;
     z-index: 1000;
-
     color: #fff;
+    transition: all .4s ease;
+}
 
+.header_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 8, 8, .82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .15);
     transition: all .4s ease;
 }
 
@@ -105,8 +116,8 @@ header{
 }
 
 h1{
-    width: 57px;
-    height: 80px;
+    width: 135px;
+    height: 100px;
 
     position: absolute;
     left: 50%;
@@ -135,6 +146,9 @@ h1 img{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 357px;
+
+    transition: all .4s ease;
 }
 
 .gnb ul{
@@ -145,10 +159,6 @@ h1 img{
     transition: all .4s ease;
 }
 
-.gnb li:nth-child(2){
-    margin-right: 207px;
-}
-
 .gnb a{
     position: relative;
     transition: color .3s;
@@ -156,11 +166,6 @@ h1 img{
 
 header.active{
     height: 85px;
-    background: rgba(8, 8, 8, .82);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-
-    box-shadow: 0 8px 30px rgba(0,0,0,.15);
 }
 
 header.active h1{
@@ -168,12 +173,12 @@ header.active h1{
     height: 60px;
 }
 
-header.active .gnb ul{
-    gap: 110px;
+header.active .gnb{
+    gap: 275px;
 }
 
-header.active .gnb li:nth-child(2){
-    margin-right: 165px;
+header.active .gnb ul{
+    gap: 110px;
 }
 
 
