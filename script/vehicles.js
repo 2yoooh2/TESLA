@@ -109,7 +109,7 @@ performanceAccItems.forEach((item) => {
 ========================= */
 
 const SPECS_DATA = {
-    rwd: {
+    standard: {
         image: "",
         specifications: {
             range: "382 km",
