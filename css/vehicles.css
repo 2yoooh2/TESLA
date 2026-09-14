@@ -52,3 +52,890 @@
     font-size: 18px;
     line-height: 1.4;
 }
+
+/* exterior */
+.exterior_wrap {
+    padding: 200px 0;
+}
+
+.exterior_inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+}
+
+.exterior_text {
+    max-width: 700px;
+    word-break: keep-all;
+}
+
+.exterior_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.exterior_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.exterior_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.exterior_visual {
+    width: 100%;
+    height: 640px;
+    margin-top: 80px;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.exterior_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.exterior_item {
+    width: calc(50% - 20px);
+}
+
+.exterior_item_img {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 24px;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.exterior_item_name {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.exterior_item_desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .exterior_wrap {
+        padding: 100px 24px;
+    }
+
+    .exterior_text {
+        max-width: 100%;
+    }
+
+    .exterior_title {
+        font-size: 28px;
+    }
+
+    .exterior_desc {
+        font-size: 16px;
+    }
+
+    .exterior_visual {
+        height: 40vh;
+        margin-top: 40px;
+    }
+
+    .exterior_row {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .exterior_item {
+        width: 100%;
+    }
+
+    .exterior_item_img {
+        height: 240px;
+        margin-bottom: 16px;
+    }
+}
+
+/* interior */
+.interior_wrap {
+    padding: 200px 0;
+}
+
+.interior_inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+}
+
+.interior_text {
+    max-width: 700px;
+    word-break: keep-all;
+}
+
+.interior_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.interior_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.interior_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.interior_row {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.interior_visual {
+    position: relative;
+    width: 640px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* 아래 3개 배경색은 이미지 연동 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
+.interior_visual_img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.interior_visual_img.is_active {
+    opacity: 1;
+}
+
+.interior_visual_img1 {
+    background-color: #c9d3d8;
+}
+
+.interior_visual_img2 {
+    background-color: #d8cfc2;
+}
+
+.interior_visual_img3 {
+    background-color: #cdd6c6;
+}
+
+.interior_accordion {
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.interior_acc_item {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.interior_acc_head {
+    display: block;
+    width: 100%;
+    padding: 24px 0;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    color: #111;
+    transition: color .3s ease;
+}
+
+.interior_acc_item.is_active .interior_acc_head {
+    color: #E82127;
+}
+
+.interior_acc_body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .4s ease;
+}
+
+.interior_acc_item.is_active .interior_acc_body {
+    grid-template-rows: 1fr;
+}
+
+.interior_acc_body_inner {
+    overflow: hidden;
+}
+
+.interior_acc_desc {
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .interior_wrap {
+        padding: 100px 24px;
+    }
+
+    .interior_text {
+        max-width: 100%;
+    }
+
+    .interior_title {
+        font-size: 28px;
+    }
+
+    .interior_desc {
+        font-size: 16px;
+    }
+
+    .interior_row {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .interior_visual {
+        width: 100%;
+    }
+
+    .interior_acc_head {
+        font-size: 18px;
+    }
+}
+
+/* comfort & quiet */
+.comfort_wrap {
+    padding: 200px 0;
+}
+
+.comfort_inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+}
+
+.comfort_text {
+    max-width: 700px;
+    word-break: keep-all;
+}
+
+.comfort_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.comfort_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.comfort_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.comfort_slider {
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 60px;
+}
+
+.comfort_swiper {
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+}
+
+.comfort_swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+/* 아래 3개 배경색은 Swiper 동작 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
+.comfort_slide_visual {
+    width: 100%;
+    height: 100%;
+}
+
+.comfort_slide_visual1 {
+    background-color: #d8c9c9;
+}
+
+.comfort_slide_visual2 {
+    background-color: #c9d0d8;
+}
+
+.comfort_slide_visual3 {
+    background-color: #d3d8c9;
+}
+
+.comfort_info {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    width: 380px;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.comfort_info_item {
+    display: none;
+}
+
+.comfort_info_item.is_active {
+    display: block;
+}
+
+.comfort_info_num {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.comfort_info_title {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.comfort_info_desc {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .comfort_wrap {
+        padding: 100px 24px;
+    }
+
+    .comfort_text {
+        max-width: 100%;
+    }
+
+    .comfort_title {
+        font-size: 28px;
+    }
+
+    .comfort_desc {
+        font-size: 16px;
+    }
+
+    .comfort_slider {
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+
+    .comfort_swiper {
+        height: 40vh;
+    }
+
+    .comfort_info {
+        position: static;
+        right: auto;
+        bottom: auto;
+        width: calc(100% - 48px);
+        margin: -40px 24px 0;
+        padding: 24px;
+    }
+}
+
+/* drive (full visual) */
+.drive_visual {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
+
+/* 실제 이미지 적용 시 이 영역을 img(object-fit: cover) 또는 background-size: cover로 채우세요. */
+
+.drive_text {
+    position: absolute;
+    left: 60px;
+    bottom: 80px;
+    max-width: 480px;
+    word-break: keep-all;
+}
+
+.drive_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.drive_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.drive_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1024px) {
+    .drive_visual {
+        height: 55vh;
+    }
+
+    .drive_text {
+        left: 24px;
+        right: 24px;
+        bottom: 40px;
+        max-width: 100%;
+    }
+
+    .drive_title {
+        font-size: 28px;
+    }
+
+    .drive_desc {
+        font-size: 16px;
+    }
+}
+
+/* model 3 performance (interior 아코디언 구조 재사용, 레이아웃만 좌우 반전) */
+.performance_wrap {
+    padding: 200px 0;
+}
+
+.performance_inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+}
+
+.performance_text {
+    max-width: 700px;
+    word-break: keep-all;
+}
+
+.performance_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.performance_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.performance_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.performance_row {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.performance_visual {
+    position: relative;
+    width: 640px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* 아래 3개 배경색은 이미지 연동 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
+.performance_visual_img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.performance_visual_img.is_active {
+    opacity: 1;
+}
+
+.performance_visual_img1 {
+    background-color: #d6d0c4;
+}
+
+.performance_visual_img2 {
+    background-color: #c4cdd6;
+}
+
+.performance_visual_img3 {
+    background-color: #d6c4c4;
+}
+
+.performance_accordion {
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.performance_acc_item {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.performance_acc_head {
+    display: block;
+    width: 100%;
+    padding: 24px 0;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    color: #111;
+    transition: color .3s ease;
+}
+
+.performance_acc_item.is_active .performance_acc_head {
+    color: #E82127;
+}
+
+.performance_acc_body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .4s ease;
+}
+
+.performance_acc_item.is_active .performance_acc_body {
+    grid-template-rows: 1fr;
+}
+
+.performance_acc_body_inner {
+    overflow: hidden;
+}
+
+.performance_acc_desc {
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .performance_wrap {
+        padding: 100px 24px;
+    }
+
+    .performance_text {
+        max-width: 100%;
+    }
+
+    .performance_title {
+        font-size: 28px;
+    }
+
+    .performance_desc {
+        font-size: 16px;
+    }
+
+    .performance_row {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .performance_visual {
+        width: 100%;
+    }
+
+    .performance_acc_head {
+        font-size: 18px;
+    }
+}
+
+/* safety (static, no accordion) */
+/* style.css에 이미 .safety_* (메인 페이지 Safety 섹션)가 정의되어 있어 충돌 방지를 위해 model3_safety_ 접두사 사용 */
+.model3_safety_wrap {
+    padding: 200px 0;
+}
+
+.model3_safety_inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+}
+
+.model3_safety_text {
+    max-width: 700px;
+    word-break: keep-all;
+}
+
+.model3_safety_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.model3_safety_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.model3_safety_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.model3_safety_row {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.model3_safety_list {
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.model3_safety_item {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.model3_safety_item_title {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.model3_safety_item_desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    word-break: keep-all;
+}
+
+/* 아래 배경색은 레이아웃 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
+.model3_safety_visual {
+    width: 640px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
+@media screen and (max-width: 1024px) {
+    .model3_safety_wrap {
+        padding: 100px 24px;
+    }
+
+    .model3_safety_text {
+        max-width: 100%;
+    }
+
+    .model3_safety_title {
+        font-size: 28px;
+    }
+
+    .model3_safety_desc {
+        font-size: 16px;
+    }
+
+    .model3_safety_row {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .model3_safety_visual {
+        order: -1;
+        width: 100%;
+    }
+
+    .model3_safety_item_title {
+        font-size: 18px;
+    }
+}
+
+/* specifications */
+.specs_wrap {
+    padding: 200px 0;
+    background-color: #111;
+    color: #fff;
+}
+
+.specs_inner {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+}
+
+.specs_title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.specs_tabs {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.specs_tab {
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ccc;
+    border-bottom: 2px solid transparent;
+    transition: color .3s ease, border-color .3s ease;
+}
+
+.specs_tab.is_active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.specs_row {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    align-items: start;
+    gap: 80px;
+}
+
+.specs_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 40px;
+}
+
+.specs_item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.specs_item_label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.specs_item_value {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    word-break: keep-all;
+}
+
+.specs_visual {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+/* 아래 3개 배경색은 이미지 연동 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
+.specs_visual_img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.specs_visual_img.is_active {
+    opacity: 1;
+}
+
+.specs_visual_img_rwd {
+    background-color: #3b3f45;
+}
+
+.specs_visual_img_premium {
+    background-color: #403a35;
+}
+
+.specs_visual_img_performance {
+    background-color: #3a3035;
+}
+
+.specs_note {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .specs_wrap {
+        padding: 100px 24px;
+    }
+
+    .specs_title {
+        font-size: 28px;
+    }
+
+    .specs_tabs {
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .specs_tab {
+        font-size: 16px;
+    }
+
+    .specs_row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .specs_visual {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .specs_list {
+        grid-template-columns: 1fr;
+    }
+}
