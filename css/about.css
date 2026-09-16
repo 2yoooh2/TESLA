@@ -1,5 +1,70 @@
 @charset "utf-8";
 
+/* intro (top visual + overlay text) */
+.about_intro_wrap {
+
+}
+
+.about_intro_inner {
+    width: 100%;
+}
+
+.about_intro_visual {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    background: url(../imggg/about_intro.jpg) center/cover;
+    color: #fff;
+    z-index: 100;
+}
+
+.about_intro_visual::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about_intro_text {
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    min-width: 1500px;
+    max-width: var(--grid-width);
+    word-break: keep-all;
+    z-index: 1;
+}
+
+.about_intro_eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #E82127;
+    font-family: "Orbitron", sans-serif;
+}
+
+.about_intro_title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Pretendard Variable", Pretendard, system-ui,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+.about_intro_desc {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.about_intro_desc + .about_intro_desc {
+    margin-top: 20px;
+}
+
 /* intro (who we are / our mission) */
 .intro_wrap {
     padding: 200px 0;

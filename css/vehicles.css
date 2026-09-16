@@ -480,10 +480,16 @@
 
 /* 실제 이미지 적용 시 이 영역을 img(object-fit: cover) 또는 background-size: cover로 채우세요. */
 
-.drive_text {
+.drive_inner {
     position: absolute;
-    left: 60px;
+    left: 50%;
     bottom: 80px;
+    width: 100%;
+    max-width: var(--grid-width);
+    transform: translateX(-50%);
+}
+
+.drive_text {
     max-width: 480px;
     word-break: keep-all;
 }
@@ -514,10 +520,16 @@
         height: 55vh;
     }
 
-    .drive_text {
+    .drive_inner {
         left: 24px;
         right: 24px;
         bottom: 40px;
+        width: auto;
+        max-width: none;
+        transform: none;
+    }
+
+    .drive_text {
         max-width: 100%;
     }
 
