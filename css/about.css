@@ -310,7 +310,7 @@
     max-width: var(--grid-width);
     margin: 0 auto;
     position: relative;
-    height: 920px;
+    height: 820px;
 }
 
 .people_text {
@@ -383,7 +383,18 @@
 /* our impact */
 .impact_wrap {
     padding: 200px 0;
-    background-color: #f2f2f2;
+    background: url(../img/about/impact.png) no-repeat center/cover;
+    position: relative;
+}
+
+.impact_wrap::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.65);
 }
 
 .impact_inner {
@@ -404,6 +415,7 @@
     margin: 0 auto;
     word-break: keep-all;
     text-align: center;
+    z-index: 1;
 }
 
 .impact_eyebrow {
@@ -433,6 +445,7 @@
     flex: 1;
     display: flex;
     gap: 10px;
+    z-index: 1;
 }
 
 .impact_card {
