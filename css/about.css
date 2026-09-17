@@ -81,7 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 96px;
+    gap: 70px;
 }
 
 .who_text {
@@ -114,8 +114,8 @@
 }
 
 .who_image {
-    width: 760px;
-    height: 640px;
+    width: 800px;
+    height: 450px;
     flex-shrink: 0;
     background: url(../img/about/who.png) no-repeat center/cover;
 }
@@ -126,13 +126,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 96px;
-    margin-top: 120px;
+    gap: 70px;
+    margin-top: 100px;
 }
 
 .mission_visual {
-    width: 640px;
-    height: 560px;
+    width: 800px;
+    height: 450px;
     flex-shrink: 0;
     position: relative;
 }
@@ -142,19 +142,19 @@
 }
 
 .mission_image1 {
-    width: 440px;
-    height: 520px;
+    width: 600px;
+    height: 350px;
     top: 0;
     left: 0;
-    background : url(../img/about/mission1.png) no-repeat center/cover;
+    background : url(../img/about/mission3.png) no-repeat center/ cover;
 }
 
 .mission_image2 {
-    width: 300px;
+    width: 410px;
     height: 260px;
     right: 0;
     bottom: 0;
-    background : url(../img/about/mission2.png) no-repeat center/cover;
+    background : url(../img/about/mission5.png) no-repeat center/cover;
 }
 
 .mission_text {
@@ -234,8 +234,6 @@
 .what_item_img {
     width: 100%;
     margin-bottom: 16px;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
 }
 
 .what_item1 .what_item_img {
@@ -263,7 +261,7 @@
 
 .what_item_desc {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.3;
     color: #666;
     word-break: keep-all;
 }
@@ -283,14 +281,15 @@
     margin-bottom: 20px;
     font-size: 56px;
     line-height: 1.1;
-    font-weight: 800;
+    font-weight: 900;
     font-family: "Orbitron", sans-serif;
     color: #E82127;
 }
 
 .what_lead {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 28px;
+    line-height: 1.4;
     font-weight: 700;
     word-break: keep-all;
 }
@@ -316,8 +315,8 @@
 
 .people_text {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 70px;
+    left: 40px;
     width: 448px;
     word-break: keep-all;
 }
@@ -346,7 +345,6 @@
 
 .people_image {
     position: absolute;
-    border: 1px solid rgba(0, 0, 0, .08);
 }
 
 .people_image1 {
