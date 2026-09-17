@@ -394,7 +394,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .impact_inner {
@@ -416,6 +416,7 @@
     word-break: keep-all;
     text-align: center;
     z-index: 1;
+    color: #fff;
 }
 
 .impact_eyebrow {
