@@ -14,7 +14,7 @@
     width: 100%;
     height: 60vh;
     overflow: hidden;
-    background: url(../imggg/about_intro.jpg) center/cover;
+    background: url(../img/about/intro.jpg) center/cover;
     color: #fff;
     z-index: 100;
 }
@@ -117,7 +117,7 @@
     width: 760px;
     height: 640px;
     flex-shrink: 0;
-    background: url(../imggg/who.png) no-repeat center/cover;
+    background: url(../img/about/who.png) no-repeat center/cover;
 }
 
 
@@ -146,7 +146,7 @@
     height: 520px;
     top: 0;
     left: 0;
-    background : url(../imggg/mission1.png) no-repeat center/cover;
+    background : url(../img/about/mission1.png) no-repeat center/cover;
 }
 
 .mission_image2 {
@@ -154,7 +154,7 @@
     height: 260px;
     right: 0;
     bottom: 0;
-    background : url(../imggg/mission2.png) no-repeat center/cover;
+    background : url(../img/about/mission2.png) no-repeat center/cover;
 }
 
 .mission_text {
@@ -240,17 +240,17 @@
 
 .what_item1 .what_item_img {
     height: 300px;
-    background: url(../imggg/about_what_engineering.png) no-repeat center / cover;
+    background: url(../img/about/what_engineering.png) no-repeat center / cover;
 }
 
 .what_item2 .what_item_img {
     height: 300px;
-    background: url(../imggg/about_what_software.png) no-repeat center / cover;
+    background: url(../img/about/what_software.png) no-repeat center / cover;
 }
 
 .what_item3 .what_item_img {
     height: 300px;
-    background: url(../imggg/about_what_manufacturing.png) no-repeat center / cover;
+    background: url(../img/about/what_manufacturing.png) no-repeat center / cover;
 }
 
 .what_item_name {
@@ -354,7 +354,7 @@
     right: 0;
     width: 450px;
     height: 550px;
-    background: url(../imggg/about_people1.png)  no-repeat center / cover;
+    background: url(../img/about/people1.png)  no-repeat center / cover;
 }
 
 .people_image2 {
@@ -362,7 +362,7 @@
     right: 470px;
     width: 650px;
     height: 380px;
-    background: url(../imggg/about_people2.png)  no-repeat center / cover;
+    background: url(../img/about/people2.png)  no-repeat center / cover;
 }
 
 .people_image3 {
@@ -370,7 +370,7 @@
     right: 470px;
     width: 350px;
     height: 420px;
-    background: url(../imggg/about_people3.png)  no-repeat center / cover;
+    background: url(../img/about/people3.png)  no-repeat center / cover;
 }
 
 .people_image4 {
@@ -378,7 +378,7 @@
     right: 0px;
     width: 450px;
     height: 250px;
-    background: url(../imggg/about_people4.png)  no-repeat center / cover;
+    background: url(../img/about/people4.png)  no-repeat center / cover;
 }
 
 
