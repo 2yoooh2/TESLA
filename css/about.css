@@ -117,8 +117,7 @@
     width: 760px;
     height: 640px;
     flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background: url(../imggg/who.png) no-repeat center/cover;
 }
 
 
@@ -140,8 +139,6 @@
 
 .mission_image {
     position: absolute;
-    background-color: #c7c7c7;
-    border: 1px solid rgba(0, 0, 0, .08);
 }
 
 .mission_image1 {
@@ -149,6 +146,7 @@
     height: 520px;
     top: 0;
     left: 0;
+    background : url(../imggg/mission1.png) no-repeat center/cover;
 }
 
 .mission_image2 {
@@ -156,7 +154,7 @@
     height: 260px;
     right: 0;
     bottom: 0;
-    background-color: #9a9a9a;
+    background : url(../imggg/mission2.png) no-repeat center/cover;
 }
 
 .mission_text {
@@ -242,17 +240,17 @@
 
 .what_item1 .what_item_img {
     height: 300px;
-    background: url(../imggg/about_what_engineering.jpg) no-repeat center / cover;
+    background: url(../imggg/about_what_engineering.png) no-repeat center / cover;
 }
 
 .what_item2 .what_item_img {
     height: 300px;
-    background: url(../imggg/about_what_software.jpg) no-repeat center / cover;
+    background: url(../imggg/about_what_software.png) no-repeat center / cover;
 }
 
 .what_item3 .what_item_img {
     height: 300px;
-    background: url(../imggg/about_what_manufacturing.jpg) no-repeat center / cover;
+    background: url(../imggg/about_what_manufacturing.png) no-repeat center / cover;
 }
 
 .what_item_name {
