@@ -447,6 +447,15 @@ main {}
 }
 
 .fsd_item {}
+.fsd_item .smartsummon{
+    background: url(../img/fsd_smartsummon.png) center/cover ;
+}
+.fsd_item .fsd{
+    background: url(../img/fsd_fsd.png) center/cover ;
+}
+.fsd_item .autopark{
+    background: url(../img/fsd_autopark.png) center/cover ;
+}
 
 .fsd_content_line {
     display: block;
