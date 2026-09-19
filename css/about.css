@@ -188,7 +188,7 @@
 
 /* what we do */
 .what_wrap {
-    padding: 200px 0 ;
+    padding: 60px 0 120px;
     background-color: #f2f2f2;
 }
 
@@ -200,35 +200,30 @@
 .what_row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .what_left {
     width: 760px;
-    height: 920px;
-    position: relative;
-}
-
-.what_item {
-    position: absolute;
 }
 
 .what_item1 {
-    top: 0;
-    left: 0;
     width: 300px;
+    margin-left: 0;
+    padding-top: 45vh;
+    padding-bottom: 20vh;
 }
 
 .what_item2 {
-    top: 230px;
-    left: 450px;
     width: 250px;
+    margin-left: 450px;
+    padding-bottom: 20vh;
 }
 
 .what_item3 {
-    top: 500px;
-    left: 40px;
     width: 300px;
+    margin-left: 40px;
+    padding-bottom: 5vh;
 }
 
 .what_item_img {
@@ -269,12 +264,19 @@
 .what_divider {
     display: block;
     width: 1px;
-    height: 920px;
+    align-self: stretch;
     background-color: rgb(170 170 170 / 20%);
 }
 
 .what_right {
     width: 448px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20vh;
 }
 
 .what_title {

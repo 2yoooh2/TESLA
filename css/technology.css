@@ -17,9 +17,20 @@
     position: relative;
     width: 100%;
     height: 60vh;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
     overflow: hidden;
+    background: url(../img/technology/intro.png) center/cover;
+    color: #fff;
+    z-index: 100;
+}
+
+.tech_intro_visual::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .tech_intro_text {
@@ -30,6 +41,7 @@
     min-width: 1500px;
     max-width: var(--grid-width);
     word-break: keep-all;
+    z-index: 1;
 }
 
 .tech_intro_eyebrow {
@@ -123,8 +135,19 @@
     width: 100%;
     height: 320px;
     margin-bottom: 20px;
-    background-color: #d9d9d9;
     border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.tesla_ai_col_perception .tesla_ai_col_visual {
+    background: url(../img/technology/ai_perception.png) no-repeat center / cover;
+}
+
+.tesla_ai_col_planning .tesla_ai_col_visual {
+    background: url(../img/technology/ai_planning.png) no-repeat center / cover;
+}
+
+.tesla_ai_col_control .tesla_ai_col_visual {
+    background: url(../img/technology/ai_control.png) no-repeat center / cover;
 }
 
 .tesla_ai_col_label {
