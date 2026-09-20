@@ -14,7 +14,7 @@
     width: 100%;
     height: 60vh;
     overflow: hidden;
-    background: url(../img/about/intro.jpg) center/cover;
+    background: url(../img/about/intro.jpg) no-repeat 100% 30% / cover;
     color: #fff;
     z-index: 100;
 }

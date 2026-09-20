@@ -294,11 +294,26 @@
 }
 
 .ai_hardware_visual {
+    position: relative;
     width: 760px;
     height: 640px;
     flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
+
+.ai_hardware_visual_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.ai_hardware_visual_img.active {
+    opacity: 1;
 }
 
 
@@ -311,6 +326,28 @@
     flex: 1;
     padding: 0 30px;
     word-break: keep-all;
+    cursor: pointer;
+}
+
+.ai_hardware_col.active .ai_hardware_col_label {
+    color: #E82127;
+}
+
+.ai_hardware_col_line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: rgba(170, 170, 170, .3);
+}
+
+.ai_hardware_col_progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #E82127;
 }
 
 .ai_hardware_col:first-child {
@@ -332,6 +369,7 @@
     line-height: 1.4;
     font-weight: 700;
     font-family: "Orbitron", sans-serif;
+    transition: color .2s ease;
 }
 
 .ai_hardware_col_desc {
@@ -403,13 +441,22 @@
 
 .autonomy_visual {
     flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .autonomy_visual{
     width: 800px;
     height: 300px;
+}
+
+.autonomy_visual_robotaxi {
+    background-image: url(../img/technology/autonomy_robotaxi.avif);
+}
+
+.autonomy_visual_robovan {
+    background-image: url(../img/technology/autonomy_robovan.avif);
 }
 
 .autonomy_text {
@@ -445,24 +492,22 @@
 }
 
 .optimus_top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 96px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    text-align: center;
+    word-break: keep-all;
 }
 
 .optimus_visual {
-    width: 760px;
-    height: 640px;
-    flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
 }
 
 .optimus_text {
-    flex: 1;
-    max-width: 480px;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
     word-break: keep-all;
 }
 
@@ -489,43 +534,4 @@
 
 .optimus_desc + .optimus_desc {
     margin-top: 20px;
-}
-
-
-/* bottom : 3 core info */
-.optimus_cols {
-    display: flex;
-}
-
-.optimus_col {
-    flex: 1;
-    padding: 0 30px;
-    word-break: keep-all;
-}
-
-.optimus_col:first-child {
-    padding-left: 0;
-}
-
-.optimus_col:last-child {
-    padding-right: 0;
-}
-
-.optimus_col + .optimus_col {
-    border-left: 1px solid rgba(170, 170, 170, .2);
-}
-
-.optimus_col_label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 700;
-    font-family: "Orbitron", sans-serif;
-}
-
-.optimus_col_desc {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
 }

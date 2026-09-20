@@ -17,10 +17,21 @@
     position: relative;
     width: 100%;
     height: 60vh;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background: url(../img/vehicles/intro.jpg) no-repeat center / cover;
     overflow: hidden;
+    color: #fff;
 }
+
+.model3_intro_visual::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 .model3_intro_text {
     position: absolute;
@@ -30,6 +41,7 @@
     min-width: 1500px;
     max-width: var(--grid-width);
     word-break: keep-all;
+    z-index: 1;
 }
 
 .model3_intro_eyebrow {
@@ -92,16 +104,15 @@
 .exterior_visual {
     width: 100%;
     height: 640px;
-    margin-top: 80px;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    margin-top: 50px;
+    background: url(../img/vehicles/exterior.jpg) no-repeat center / cover;
 }
 
 .exterior_row {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .exterior_item {
@@ -111,13 +122,20 @@
 .exterior_item_img {
     width: 100%;
     height: 360px;
-    margin-bottom: 24px;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    margin-bottom: 20px;
+    background: no-repeat center / cover;
+}
+
+.exterior_item_img_aero {
+    background-image: url(../img/vehicles/exterior_design.avif);
+}
+
+.exterior_item_img_roof {
+    background-image: url(../img/vehicles/exterior_roof.jpg);
 }
 
 .exterior_item_name {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
 }
@@ -169,7 +187,6 @@
 
 /* interior */
 .interior_wrap {
-    padding: 200px 0;
 }
 
 .interior_inner {
@@ -207,7 +224,7 @@
     display: flex;
     align-items: flex-start;
     gap: 80px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .interior_visual {
@@ -218,11 +235,11 @@
     overflow: hidden;
 }
 
-/* 아래 3개 배경색은 이미지 연동 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
 .interior_visual_img {
     position: absolute;
     inset: 0;
     opacity: 0;
+    background: no-repeat center / cover;
     transition: opacity .4s ease;
 }
 
@@ -231,15 +248,15 @@
 }
 
 .interior_visual_img1 {
-    background-color: #c9d3d8;
+    background-image: url(../img/vehicles/interior_touchscreen.jpg);
 }
 
 .interior_visual_img2 {
-    background-color: #d8cfc2;
+    background-image: url(../img/vehicles/interior_ambient.png);
 }
 
 .interior_visual_img3 {
-    background-color: #cdd6c6;
+    background-image: url(../img/vehicles/interior_minimal.jpg);
 }
 
 .interior_accordion {
@@ -358,7 +375,7 @@
 
 .comfort_slider {
     position: relative;
-    margin-top: 80px;
+    margin-top: 50px;
     padding-bottom: 60px;
 }
 
@@ -373,32 +390,33 @@
     height: 100%;
 }
 
-/* 아래 3개 배경색은 Swiper 동작 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
 .comfort_slide_visual {
     width: 100%;
     height: 100%;
+    background: no-repeat center / cover;
 }
 
 .comfort_slide_visual1 {
-    background-color: #d8c9c9;
+    background-image: url(../img/vehicles/comfort_frontseats.jpg);
 }
 
 .comfort_slide_visual2 {
-    background-color: #c9d0d8;
+    background-image: url(../img/vehicles/comfort_display.jpg);
 }
 
 .comfort_slide_visual3 {
-    background-color: #d3d8c9;
+    background-image: url(../img/vehicles/comfort_charging.jpg);
 }
 
 .comfort_info {
     position: absolute;
-    right: 60px;
-    bottom: 0;
+    right: -30px;
+    bottom: 50px;
     width: 380px;
     padding: 40px;
-    background-color: #fff;
+    background-color: #f2f2f2;
     border: 1px solid rgba(0, 0, 0, .08);
+    z-index: 1;
 }
 
 .comfort_info_item {
@@ -473,12 +491,16 @@
     position: relative;
     width: 100%;
     height: 65vh;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
     overflow: hidden;
 }
 
-/* 실제 이미지 적용 시 이 영역을 img(object-fit: cover) 또는 background-size: cover로 채우세요. */
+.drive_video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .drive_inner {
     position: absolute;
@@ -594,11 +616,11 @@
     overflow: hidden;
 }
 
-/* 아래 3개 배경색은 이미지 연동 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
 .performance_visual_img {
     position: absolute;
     inset: 0;
     opacity: 0;
+    background: no-repeat center / cover;
     transition: opacity .4s ease;
 }
 
@@ -607,15 +629,15 @@
 }
 
 .performance_visual_img1 {
-    background-color: #d6d0c4;
+    background-image: url(../img/vehicles/performance_adaptive.jpg);
 }
 
 .performance_visual_img2 {
-    background-color: #c4cdd6;
+    background-image: url(../img/vehicles/performance_brakes.jpg);
 }
 
 .performance_visual_img3 {
-    background-color: #d6c4c4;
+    background-image: url(../img/vehicles/perpormane_track.jfif);
 }
 
 .performance_accordion {
@@ -763,13 +785,11 @@
     word-break: keep-all;
 }
 
-/* 아래 배경색은 레이아웃 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
 .model3_safety_visual {
     width: 640px;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background: url(../img/vehicles/safety.avif) no-repeat center / cover;
 }
 
 @media screen and (max-width: 1024px) {
@@ -886,11 +906,11 @@
     overflow: hidden;
 }
 
-/* 아래 3개 배경색은 이미지 연동 확인용 임시 색상입니다. 실제 이미지 적용 시 background-color를 지우고 이미지로 교체하세요. */
 .specs_visual_img {
     position: absolute;
     inset: 0;
     opacity: 0;
+    background: no-repeat center / cover;
     transition: opacity .4s ease;
 }
 
@@ -899,15 +919,15 @@
 }
 
 .specs_visual_img_standard {
-    background-color: #3b3f45;
+    background-image: url(../img/vehicles/specs_rwd.avif);
 }
 
 .specs_visual_img_premium {
-    background-color: #403a35;
+    background-image: url(../img/vehicles/specs_rwd.avif);
 }
 
 .specs_visual_img_performance {
-    background-color: #3a3035;
+    background-image: url(../img/vehicles/specs_performance.avif);
 }
 
 .specs_note {

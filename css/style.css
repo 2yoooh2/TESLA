@@ -97,7 +97,12 @@ header{
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, .15);
-    transition: all .4s ease;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+header.scrolled .header_bg{
+    opacity: 1;
 }
 
 .header_inner{
@@ -788,6 +793,7 @@ main {}
 
     background-image: url(../img/sw_car.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
 

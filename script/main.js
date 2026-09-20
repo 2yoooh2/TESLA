@@ -512,7 +512,10 @@ const header = document.querySelector("header");
 const hero = document.querySelector(".visual_wrap");
 const headerLogo = document.querySelector("header h1 img");
 
+const HEADER_SCROLL_TRIGGER = 50;
+
 let isHeaderActive = false;
+let isHeaderScrolled = false;
 let logoSwapTimer = null;
 
 function swapHeaderLogo(active) {
@@ -531,7 +534,18 @@ function swapHeaderLogo(active) {
 
 function renderHeaderScroll() {
 
-    if (!header || !hero) {
+    if (!header) {
+        return;
+    }
+
+    const shouldBeScrolled = window.scrollY > HEADER_SCROLL_TRIGGER;
+
+    if (shouldBeScrolled !== isHeaderScrolled) {
+        isHeaderScrolled = shouldBeScrolled;
+        header.classList.toggle("scrolled", isHeaderScrolled);
+    }
+
+    if (!hero) {
         return;
     }
 
