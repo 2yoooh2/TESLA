@@ -17,8 +17,10 @@
     position: relative;
     width: 100%;
     height: 60vh;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background-image: url(../img/charging/intro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -110,8 +112,10 @@
     width: 760px;
     height: 640px;
     flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background-image: url(../img/charging/homecharging.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home_charging_aside {
@@ -159,8 +163,10 @@
 .supercharger_visual {
     width: 62%;
     flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background-image: url(../img/charging/supercharger.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .supercharger_text {
@@ -237,37 +243,38 @@
 }
 
 
-/* center : wide visual */
-.trip_planner_visual {
-    width: 100%;
-    height: 640px;
-    margin-bottom: 50px;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
-}
-
-
-/* bottom : 3 columns */
-.trip_planner_cols {
+/* steps : zigzag route → battery → charging */
+.trip_planner_steps {
     display: flex;
+    flex-direction: column;
+    gap: 160px;
 }
 
-.trip_planner_col {
+.trip_planner_step {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.trip_planner_step_reverse {
+    flex-direction: row-reverse;
+}
+
+.trip_planner_step_visual {
     flex: 1;
-    padding: 0 60px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.trip_planner_step_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip_planner_step_text {
+    flex: 1;
     word-break: keep-all;
-}
-
-.trip_planner_col:first-child {
-    padding-left: 0;
-}
-
-.trip_planner_col:last-child {
-    padding-right: 0;
-}
-
-.trip_planner_col + .trip_planner_col {
-    border-left: 1px solid rgba(170, 170, 170, .2);
 }
 
 .trip_planner_col_label {
@@ -289,6 +296,10 @@
     font-size: 16px;
     line-height: 1.5;
     color: #666;
+}
+
+.trip_planner_col_desc + .trip_planner_col_desc {
+    margin-top: 16px;
 }
 
 
@@ -354,8 +365,10 @@
     width: 520px;
     height: 760px;
     flex-shrink: 0;
-    background-color: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, .08);
+    background-image: url(../img/charging/tesla_app.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -364,8 +377,10 @@
     position: relative;
     width: 100%;
     height: 70vh;
-    background-color: #d9d9d9;
-    border-top: 1px solid rgba(0, 0, 0, .08);
+    background-image: url(../img/charging/charging_anywhere.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 

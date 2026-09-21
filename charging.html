@@ -185,32 +185,56 @@
                     </p>
                 </div>
 
-                <div class="trip_planner_visual"></div>
+                <div class="trip_planner_steps">
 
-                <div class="trip_planner_cols">
-
-                    <div class="trip_planner_col">
-                        <span class="trip_planner_col_label">01 / ROUTE</span>
-                        <h3 class="trip_planner_col_title">이동 경로 계산</h3>
-                        <p class="trip_planner_col_desc">
-                            목적지를 설정하면 현재 위치에서 목적지까지의 이동 경로와 필요한 충전 지점을 함께 계획합니다.
-                        </p>
+                    <div class="trip_planner_step">
+                        <div class="trip_planner_step_visual">
+                            <img src="img/charging/trip_route.avif" alt="이동 경로 계산">
+                        </div>
+                        <div class="trip_planner_step_text">
+                            <span class="trip_planner_col_label">01 / ROUTE</span>
+                            <h3 class="trip_planner_col_title">이동 경로를 먼저 설계합니다</h3>
+                            <p class="trip_planner_col_desc">
+                                목적지를 설정하면 Tesla 내비게이션이 현재 위치에서 목적지까지의 이동 경로를 계산합니다. <br>
+                                장거리 이동 중 충전이 필요한 경우 배터리 상태와 이동 경로를 함께 고려해 필요한 충전 지점을 경로에 포함합니다.
+                            </p>
+                            <p class="trip_planner_col_desc">
+                                단순히 가장 가까운 충전소를 찾는 것이 아니라, 목적지까지 이동하는 전체 과정 안에서 충전을 함께 계획합니다.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="trip_planner_col">
-                        <span class="trip_planner_col_label">02 / BATTERY</span>
-                        <h3 class="trip_planner_col_title">배터리 사용량 예측</h3>
-                        <p class="trip_planner_col_desc">
-                            주행 환경과 차량의 에너지 사용량을 바탕으로 목적지에 도착할 때의 예상 배터리 잔량을 계산합니다.
-                        </p>
+                    <div class="trip_planner_step trip_planner_step_reverse">
+                        <div class="trip_planner_step_visual">
+                            <img src="img/charging/trip_battery.avif" alt="배터리 사용량 예측">
+                        </div>
+                        <div class="trip_planner_step_text">
+                            <span class="trip_planner_col_label">02 / BATTERY</span>
+                            <h3 class="trip_planner_col_title">도착할 때까지 배터리를 예측합니다</h3>
+                            <p class="trip_planner_col_desc">
+                                주행을 시작한 이후에도 차량의 에너지 사용량을 지속적으로 분석해 목적지에 도착했을 때의 예상 배터리 잔량을 계산합니다.
+                            </p>
+                            <p class="trip_planner_col_desc">
+                                주행 환경과 차량 상태에 따라 예상치를 업데이트해 운전자가 현재 배터리로 어디까지 이동할 수 있는지 확인하면서 주행할 수 있도록 지원합니다.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="trip_planner_col">
-                        <span class="trip_planner_col_label">03 / CHARGING</span>
-                        <h3 class="trip_planner_col_title">필요한 충전소 안내</h3>
-                        <p class="trip_planner_col_desc">
-                            이동 중 충전이 필요한 경우 경로에 적합한 수퍼차저를 찾아 자연스럽게 이동 계획에 포함합니다.
-                        </p>
+                    <div class="trip_planner_step">
+                        <div class="trip_planner_step_visual">
+                            <img src="img/charging/trip_charging.avif" alt="필요한 충전소 안내">
+                        </div>
+                        <div class="trip_planner_step_text">
+                            <span class="trip_planner_col_label">03 / CHARGING</span>
+                            <h3 class="trip_planner_col_title">필요한 순간에 충전을 연결합니다</h3>
+                            <p class="trip_planner_col_desc">
+                                목적지까지 이동하는 과정에서 충전이 필요하면 경로에 적합한 수퍼차저를 안내합니다. <br>
+                                충전 지점까지의 이동과 충전 이후의 경로를 하나의 여정 안에서 연결해 다음 목적지까지 자연스럽게 이동을 이어갈 수 있도록 합니다.
+                            </p>
+                            <p class="trip_planner_col_desc">
+                                충전을 위해 여행을 바꾸는 것이 아니라, 여행의 흐름 안에 충전을 포함합니다.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
