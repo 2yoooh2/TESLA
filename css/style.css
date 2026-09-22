@@ -319,7 +319,7 @@ main {}
 .visual_eyebrow {
     font-family: "Orbitron", sans-serif;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 100px;
     margin-bottom: 10px;
 }
@@ -431,6 +431,7 @@ main {}
 
 .fsd_eyebrow {
     font-size: 16px;
+    font-weight: 600;
     color: #E82127;
     margin-bottom: 5px;
 }
@@ -563,6 +564,7 @@ main {}
 
 .safety_eyebrow {
     font-size: 16px;
+    font-weight: 600;
 }
 
 .safety_title {
@@ -698,6 +700,7 @@ main {}
 
     color: #E82127;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .software_title{
@@ -865,6 +868,7 @@ main {}
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
+    font-weight: 600;
     color: #e82127;
 }
 
@@ -1107,6 +1111,7 @@ main {}
     display: inline-block;
     margin-bottom: 5px;
     font-size: 16px;
+    font-weight: 600;
     color: #e82127;
 }
 
