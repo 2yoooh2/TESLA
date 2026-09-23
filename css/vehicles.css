@@ -183,7 +183,7 @@
 
     .exterior_item_img {
         height: 240px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
 }
 
@@ -433,14 +433,14 @@
 
 .comfort_info_num {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 14px;
     color: #E82127;
     font-family: "Orbitron", sans-serif;
 }
 
 .comfort_info_title {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
     font-family: "Pretendard Variable", Pretendard, system-ui,
@@ -780,7 +780,7 @@
 }
 
 .model3_safety_item_title {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
 }
@@ -893,7 +893,7 @@
 
 .specs_item_label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 14px;
     color: #ccc;
 }

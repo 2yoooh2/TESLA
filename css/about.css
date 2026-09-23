@@ -148,7 +148,7 @@
     height: 350px;
     top: 0;
     left: 0;
-    background : url(../img/about/mission3.png) no-repeat center/ cover;
+    background : url(../img/about/mission.png) no-repeat center/ cover;
 }
 
 .mission_image2 {
@@ -156,7 +156,7 @@
     height: 260px;
     right: 0;
     bottom: 0;
-    background : url(../img/about/mission5.jpg) no-repeat center/cover;
+    background : url(../img/about/mission9.jpg) no-repeat center/cover;
 }
 
 .mission_text {
@@ -245,7 +245,7 @@
 
 .what_item3 {
     margin-left: 360px;
-    padding-bottom: 5vh;
+    padding-bottom: 20vh;
 }
 
 .what_item_img {
@@ -277,7 +277,7 @@
 
 .what_item_name {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 18px;
     line-height: 1.4;
     font-weight: 700;

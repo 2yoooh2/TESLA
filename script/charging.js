@@ -81,7 +81,7 @@ const tripPlannerTextEls = tripPlannerWrap
 const TRIP_PLANNER_BG_FROM = [255, 255, 255];
 const TRIP_PLANNER_BG_TO = [17, 17, 17];
 const TRIP_PLANNER_TEXT_TO = [255, 255, 255];
-const TRIP_PLANNER_TRANSITION_RATIO = 0.6;
+const TRIP_PLANNER_TRANSITION_RATIO = 1.2;
 
 let tripPlannerTextFromColors = [];
 let tripPlannerTicking = false;

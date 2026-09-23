@@ -154,7 +154,7 @@
 }
 
 .home_charging_item + .home_charging_item {
-    margin-top: 56px;
+    margin-top: 55px;
 }
 
 
@@ -312,18 +312,16 @@
 .trip_planner_col_desc {
     font-size: 16px;
     line-height: 1.5;
-    color: #666;
 }
 
 .trip_planner_col_desc + .trip_planner_col_desc {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 
 /* tesla app */
 .tesla_app_wrap {
     padding: 200px 0;
-    background-color: #f2f2f2;
 }
 
 .tesla_app_inner {
@@ -339,7 +337,7 @@
 }
 
 .tesla_app_text {
-    width: 448px;
+    width: 600px;
     flex-shrink: 0;
     word-break: keep-all;
 }
@@ -367,16 +365,16 @@
 }
 
 .tesla_app_sub_title {
-    margin-top: 56px;
+    margin-top: 55px;
     margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
 }
 
 .tesla_app_sub_desc {
+    width: 500px;
     font-size: 16px;
     line-height: 1.5;
-    color: #666;
 }
 
 .tesla_app_visual {
@@ -427,7 +425,7 @@
 
 .charge_anywhere_eyebrow {
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     font-size: 16px;
     font-weight: 600;
     color: #E82127;
@@ -444,7 +442,7 @@
 
 .charge_anywhere_keyword {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 1.4;
     letter-spacing: 0.05em;
