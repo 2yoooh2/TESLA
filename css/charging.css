@@ -16,13 +16,24 @@
 .charging_intro_visual {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 45vh;
     background-image: url(../img/charging/intro.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
+.charging_intro_visual::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 
 .charging_intro_text {
     position: absolute;
@@ -32,6 +43,8 @@
     min-width: 1500px;
     max-width: var(--grid-width);
     word-break: keep-all;
+    z-index: 1;
+    color: #f2f2f2;
 }
 
 .charging_intro_eyebrow {
@@ -389,6 +402,16 @@
     overflow: hidden;
 }
 
+.charge_anywhere_wrap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .charge_anywhere_inner {
     position: absolute;
     top: 50%;
@@ -398,6 +421,8 @@
     padding: 0 40px;
     text-align: center;
     word-break: keep-all;
+    z-index: 1;
+    color: #fff;
 }
 
 .charge_anywhere_eyebrow {

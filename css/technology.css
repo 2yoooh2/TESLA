@@ -16,7 +16,7 @@
 .tech_intro_visual {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 45vh;
     overflow: hidden;
     background: url(../img/technology/intro.png) center/cover;
     color: #fff;
