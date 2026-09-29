@@ -246,9 +246,9 @@
 
 /* top : main message */
 .trip_planner_top {
-    max-width: 620px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     word-break: keep-all;
+    text-align: center;
 }
 
 .trip_planner_eyebrow {
@@ -294,7 +294,7 @@
 
 .trip_planner_step_visual {
     flex: 3;
-    height: 560px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -350,12 +350,12 @@
 
 .trip_planner_col_title {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
 }
 
 .trip_planner_col_desc {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
