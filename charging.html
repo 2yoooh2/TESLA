@@ -15,6 +15,9 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/charging.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body>
@@ -115,7 +118,7 @@
         <section class="home_charging_wrap">
             <div class="home_charging_inner">
 
-                <div class="home_charging_top">
+                <div class="home_charging_top" data-aos="fade-up">
                     <span class="home_charging_eyebrow">HOME CHARGING</span>
                     <h2 class="home_charging_title">하루의 시작을 준비하는 충전</h2>
                     <p class="home_charging_desc">
@@ -131,17 +134,17 @@
 
                 <div class="home_charging_row">
 
-                    <div class="home_charging_visual"></div>
+                    <div class="home_charging_visual" data-aos="fade-right"></div>
 
                     <div class="home_charging_aside">
-                        <div class="home_charging_item">
+                        <div class="home_charging_item" data-aos="fade-up" data-aos-delay="0">
                             <h3 class="home_charging_item_title">언제든 준비된 차량</h3>
                             <p class="home_charging_item_desc">
                                 집에 도착해 차량을 연결해 두면 주차된 시간을 활용해 충전할 수 있어 별도의 충전소 방문 없이 다음 이동을 준비할 수 있습니다.
                             </p>
                         </div>
 
-                        <div class="home_charging_item">
+                        <div class="home_charging_item" data-aos="fade-up" data-aos-delay="150">
                             <h3 class="home_charging_item_title">공간에 맞춘 충전 환경</h3>
                             <p class="home_charging_item_desc">
                                 월 커넥터는 다양한 주거 및 업무 환경에 설치할 수 있으며 여러 대를 함께 사용하는 환경에서는 전력 공유 기능을 통해 사용 가능한 전력을 효율적으로 분배할 수 있습니다.
@@ -156,10 +159,8 @@
 
         <section class="supercharger_wrap">
             <div class="supercharger_inner">
-                <div class="supercharger_row">
-
-                    <div class="supercharger_visual"></div>
-
+                <div class="supercharger_visual"></div>
+                <div class="supercharger_text_box" data-aos="fade-left">
                     <div class="supercharger_text">
                         <span class="supercharger_eyebrow">SUPERCHARGER</span>
                         <h2 class="supercharger_title">멈추는 시간을 최소화하다</h2>
@@ -168,16 +169,16 @@
                             Tesla 수퍼차저 네트워크는 주요 이동 경로와 다양한 목적지에 구축되어 장거리 주행 중 필요한 충전을 지원합니다. <br>
                             차량에 충전 케이블을 연결하면 충전이 시작되며 Tesla 앱을 통해 충전 진행 상황과 충전소의 이용 가능 여부를 확인할 수 있습니다.
                         </p>
-                    </div>
-
                 </div>
+                </div>
+
             </div>
         </section>
 
         <section class="trip_planner_wrap">
             <div class="trip_planner_inner">
 
-                <div class="trip_planner_top">
+                <div class="trip_planner_top" data-aos="fade-up">
                     <span class="trip_planner_eyebrow">TRIP PLANNER</span>
                     <h2 class="trip_planner_title">목적지만 정하면 됩니다</h2>
                     <p class="trip_planner_desc">
@@ -191,10 +192,10 @@
                 <div class="trip_planner_steps">
 
                     <div class="trip_planner_step">
-                        <div class="trip_planner_step_visual">
+                        <div class="trip_planner_step_visual" data-aos="fade-right">
                             <div class="trip_planner_step_img trip_planner_visual_route"></div>
                         </div>
-                        <div class="trip_planner_step_text">
+                        <div class="trip_planner_step_text" data-aos="fade-left">
                             <span class="trip_planner_col_label"><span class="trip_planner_col_num">01</span>ROUTE</span>
                             <h3 class="trip_planner_col_title">이동 경로를 먼저 설계합니다</h3>
                             <p class="trip_planner_col_desc">
@@ -208,10 +209,10 @@
                     </div>
 
                     <div class="trip_planner_step trip_planner_step_reverse">
-                        <div class="trip_planner_step_visual">
+                        <div class="trip_planner_step_visual" data-aos="fade-left">
                             <div class="trip_planner_step_img trip_planner_visual_battery"></div>
                         </div>
-                        <div class="trip_planner_step_text">
+                        <div class="trip_planner_step_text" data-aos="fade-right">
                             <span class="trip_planner_col_label"><span class="trip_planner_col_num">02</span>BATTERY</span>
                             <h3 class="trip_planner_col_title">도착할 때까지 배터리를 예측합니다</h3>
                             <p class="trip_planner_col_desc">
@@ -224,10 +225,10 @@
                     </div>
 
                     <div class="trip_planner_step">
-                        <div class="trip_planner_step_visual">
+                        <div class="trip_planner_step_visual" data-aos="fade-right">
                             <div class="trip_planner_step_img trip_planner_visual_charging"></div>
                         </div>
-                        <div class="trip_planner_step_text">
+                        <div class="trip_planner_step_text" data-aos="fade-left">
                             <span class="trip_planner_col_label"><span class="trip_planner_col_num">03</span>CHARGING</span>
                             <h3 class="trip_planner_col_title">필요한 순간에 충전을 연결합니다</h3>
                             <p class="trip_planner_col_desc">
@@ -249,7 +250,7 @@
             <div class="tesla_app_inner">
                 <div class="tesla_app_row">
 
-                    <div class="tesla_app_text">
+                    <div class="tesla_app_text" data-aos="fade-right">
                         <span class="tesla_app_eyebrow">TESLA APP</span>
                         <h2 class="tesla_app_title">충전 상태를 한눈에</h2>
                         <p class="tesla_app_desc">
@@ -263,7 +264,7 @@
                         </p>
                     </div>
 
-                    <div class="tesla_app_visual"></div>
+                    <div class="tesla_app_visual" data-aos="fade-left" data-aos-duration="1400"></div>
 
                 </div>
             </div>
@@ -271,10 +272,10 @@
 
         <section class="charge_anywhere_wrap">
             <div class="charge_anywhere_inner">
-                <span class="charge_anywhere_eyebrow">CHARGE ANYWHERE</span>
-                <h2 class="charge_anywhere_title">어디에서든, 다음 이동을 준비합니다</h2>
-                <span class="charge_anywhere_keyword">Home · City · Journey</span>
-                <p class="charge_anywhere_desc">
+                <span class="charge_anywhere_eyebrow" data-aos="fade-up">CHARGE ANYWHERE</span>
+                <h2 class="charge_anywhere_title" data-aos="fade-up">어디에서든, 다음 이동을 준비합니다</h2>
+                <span class="charge_anywhere_keyword" data-aos="fade-up">Home · City · Journey</span>
+                <p class="charge_anywhere_desc" data-aos="fade-up">
                     집에서 시작해 목적지에 도착할 때까지,
                     Tesla의 충전 네트워크는 이동이 계속될 수 있도록 연결됩니다.
                 </p>
@@ -324,6 +325,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./script/charging.js" defer></script>
 </body>
 

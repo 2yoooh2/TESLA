@@ -175,37 +175,49 @@
 
 /* supercharger */
 .supercharger_wrap {
-    padding: 200px 0;
-    background-color: #f2f2f2;
+    padding-bottom: 200px;
 }
 
 .supercharger_inner {
-    max-width: var(--grid-width);
+    /* max-width: var(--grid-width); */
     margin: 0 auto;
-}
-
-.supercharger_row {
-    display: flex;
-    align-items: stretch;
-    height: 640px;
+    position: relative;
 }
 
 .supercharger_visual {
-    width: 62%;
-    flex-shrink: 0;
+    width: 75%;
+    height: 640px;
     background-image: url(../img/charging/supercharger.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-.supercharger_text {
-    flex: 1;
+
+.supercharger_text_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 40px 0 80px;
+    align-items: center;
+    width: 60%;
+    height: 640px;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.4) 8%,
+        rgba(255, 255, 255, 0.8) 15%,
+        #fff 24%
+    );
+}
+
+.supercharger_text{
     word-break: keep-all;
+    width: 450px;
+    margin-left: 350px;
 }
 
 .supercharger_eyebrow {
@@ -226,7 +238,6 @@
 }
 
 .supercharger_desc {
-    max-width: 420px;
     font-size: 18px;
     line-height: 1.4;
     word-break: keep-all;
@@ -236,6 +247,10 @@
 /* trip planner */
 .trip_planner_wrap {
     padding: 200px 0;
+    background-image: url(../img/charging/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .trip_planner_inner {
@@ -350,12 +365,12 @@
 
 .trip_planner_col_title {
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .trip_planner_col_desc {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -366,7 +381,20 @@
 
 /* tesla app */
 .tesla_app_wrap {
-    padding: 200px 0;
+    padding: 150px 0 200px;
+    position: relative;
+}
+
+.tesla_app_wrap::after{
+    position: absolute;
+    content: "TESLA";
+    top: 10px;
+    left: -60px;
+    font-weight: 900;
+    font-size: 400px;
+    color: rgb(170, 170, 170, 10%);
+    letter-spacing: 20px;
+    z-index: -1;
 }
 
 .tesla_app_inner {
@@ -410,10 +438,12 @@
 }
 
 .tesla_app_sub_title {
-    margin-top: 55px;
+    margin-top: 40px;
+    padding-top: 40px;
     margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
+    border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 .tesla_app_sub_desc {
