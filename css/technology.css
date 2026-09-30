@@ -213,7 +213,7 @@
     top: 50%;
     right: calc((100% - var(--grid-width)) / 2);
     transform: translateY(-50%);
-    max-width: 480px;
+    max-width: 550px;
     color: #fff;
     word-break: keep-all;
     z-index: 1;
@@ -229,7 +229,7 @@
 }
 
 .tech_fsd_title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 36px;
     font-weight: 700;
     font-family: "Pretendard Variable", Pretendard, system-ui,
@@ -257,7 +257,7 @@
 }
 
 .ai_hardware_top {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .ai_hardware_text {
@@ -276,7 +276,6 @@
 }
 
 .ai_hardware_title {
-    margin-bottom: 20px;
     font-size: 36px;
     font-weight: 700;
     font-family: "Pretendard Variable", Pretendard, system-ui,

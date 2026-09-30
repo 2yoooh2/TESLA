@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/technology.css">
 </head>
@@ -116,7 +119,7 @@
         <section class="tesla_ai_wrap">
             <div class="tesla_ai_inner">
 
-                <div class="tesla_ai_top">
+                <div class="tesla_ai_top" data-aos="fade-up">
                     <span class="tesla_ai_eyebrow">TESLA AI</span>
                     <h2 class="tesla_ai_title">현실 세계를 이해하는 AI</h2>
                     <p class="tesla_ai_desc">
@@ -132,7 +135,7 @@
 
                 <div class="tesla_ai_cols">
 
-                    <article class="tesla_ai_col tesla_ai_col_perception">
+                    <article class="tesla_ai_col tesla_ai_col_perception" data-aos="fade-up" data-aos-delay="0">
                         <div class="tesla_ai_col_visual"></div>
                         <span class="tesla_ai_col_label">PERCEPTION</span>
                         <h3 class="tesla_ai_col_title">보고 이해하다</h3>
@@ -143,7 +146,7 @@
 
                     <span class="tesla_ai_col_line"></span>
 
-                    <article class="tesla_ai_col tesla_ai_col_planning">
+                    <article class="tesla_ai_col tesla_ai_col_planning" data-aos="fade-up" data-aos-delay="150">
                         <div class="tesla_ai_col_visual"></div>
                         <span class="tesla_ai_col_label">PLANNING</span>
                         <h3 class="tesla_ai_col_title">판단하고 계획하다</h3>
@@ -154,7 +157,7 @@
 
                     <span class="tesla_ai_col_line"></span>
 
-                    <article class="tesla_ai_col tesla_ai_col_control">
+                    <article class="tesla_ai_col tesla_ai_col_control" data-aos="fade-up" data-aos-delay="300">
                         <div class="tesla_ai_col_visual"></div>
                         <span class="tesla_ai_col_label">CONTROL</span>
                         <h3 class="tesla_ai_col_title">현실에서 움직이다</h3>
@@ -175,13 +178,15 @@
                     <video class="tech_fsd_video" src="./img/technology/fsd.webm" autoplay muted loop playsinline></video>
 
                     <div class="tech_fsd_text">
-                        <span class="tech_fsd_eyebrow">FSD</span>
-                        <h2 class="tech_fsd_title">주행을 이해하고 판단하는 기술</h2>
-                        <p class="tech_fsd_desc">
-                            풀 셀프 드라이빙(감독형)은 Tesla가 개발하고 있는 운전자 보조 기술로, 차량의 카메라와 AI 기반 소프트웨어를 활용해 주변 환경을 인식하고 실제 도로에서 필요한 주행 판단을 수행합니다. <br>
+                        <span class="tech_fsd_eyebrow" data-aos="fade-left">FSD</span>
+                        <h2 class="tech_fsd_title" data-aos="fade-left" data-aos-delay="100">주행을 이해하고 판단하는 기술</h2>
+                        <p class="tech_fsd_desc" data-aos="fade-left" data-aos-delay="200">
+                            풀 셀프 드라이빙(감독형)은 Tesla가 개발하고 있는 운전자 보조 기술로, 차량의 카메라와 AI 기반 소프트웨어를 활용해 주변 환경을 인식하고 실제 도로에서 필요한 주행 판단을 수행합니다.
+                        </p>
+                        <p class="tech_fsd_desc" data-aos="fade-left" data-aos-delay="300">
                             Tesla의 신경망은 카메라에서 입력되는 영상을 분석해 도로 구조와 주변 객체를 이해하고, 자율 주행 알고리즘은 공간과 시간에 걸친 정보를 바탕으로 차량이 이동할 궤적을 계획합니다.
                         </p>
-                        <p class="tech_fsd_desc">
+                        <p class="tech_fsd_desc" data-aos="fade-left" data-aos-delay="400">
                             이 과정에서 인식과 판단, 경로 계획, 차량 제어가 하나의 시스템으로 연결되며 Tesla는 실제 차량 플릿과 평가 인프라를 활용해 관련 알고리즘을 지속적으로 검증하고 발전시키고 있습니다. <br>
                             현재 제공되는 풀 셀프 드라이빙은 감독형 시스템으로 운전자의 적극적인 감독이 필요하며 차량을 완전 자율주행 차량으로 만드는 기능은 아닙니다.
                         </p>
@@ -196,7 +201,7 @@
 
                 <div class="ai_hardware_top">
 
-                    <div class="ai_hardware_text">
+                    <div class="ai_hardware_text" data-aos="fade-right">
                         <span class="ai_hardware_eyebrow">AI HARDWARE</span>
                         <h2 class="ai_hardware_title">AI를 위해 설계된 하드웨어</h2>
                         <p class="ai_hardware_desc">
@@ -205,14 +210,14 @@
                         </p>
                     </div>
 
-                    <div class="ai_hardware_visual">
+                    <div class="ai_hardware_visual" data-aos="fade-left" data-aos-duration="1400">
                         <img class="ai_hardware_visual_img active" src="./img/technology/hardware_chip.png" alt="AI INFERENCE CHIP">
                         <img class="ai_hardware_visual_img" src="./img/technology/hardware_chip.png" alt="AI INFERENCE CHIP">
                     </div>
 
                 </div>
 
-                <div class="ai_hardware_cols">
+                <div class="ai_hardware_cols" data-aos="fade-up">
 
                     <div class="ai_hardware_col active" data-img="./img/technology/hardware_chip.png">
                         <div class="ai_hardware_col_line">
@@ -252,7 +257,7 @@
         <section class="autonomy_wrap">
             <div class="autonomy_inner">
 
-                <div class="autonomy_top">
+                <div class="autonomy_top" data-aos="fade-up">
                     <span class="autonomy_eyebrow">AUTONOMY</span>
                     <h2 class="autonomy_title">운전자가 없는 이동을 향해</h2>
                     <p class="autonomy_desc">
@@ -266,8 +271,8 @@
                 </div>
 
                 <div class="autonomy_row" data-bg="ROBOTAXI">
-                    <div class="autonomy_visual autonomy_visual_robotaxi"></div>
-                    <div class="autonomy_text">
+                    <div class="autonomy_visual autonomy_visual_robotaxi" data-aos="fade-right" data-aos-duration="1400"></div>
+                    <div class="autonomy_text" data-aos="fade-left">
                         <span class="autonomy_keyword">ROBOTAXI</span>
                         <p class="autonomy_row_desc">
                             차량을 호출해 출퇴근이나 일상적인 이동 등에 사용할 수 있도록 개발되는 자율 이동 수단
@@ -276,13 +281,13 @@
                 </div>
 
                 <div class="autonomy_row autonomy_row_reverse" data-bg="ROBOVAN">
-                    <div class="autonomy_text">
+                    <div class="autonomy_text" data-aos="fade-right">
                         <span class="autonomy_keyword">ROBOVAN</span>
                         <p class="autonomy_row_desc">
                             대량 운송부터 다양한 산업 영역까지 여러 사람 또는 물품의 자율 운송을 지원하도록 제시된 이동 수단
                         </p>
                     </div>
-                    <div class="autonomy_visual autonomy_visual_robovan"></div>
+                    <div class="autonomy_visual autonomy_visual_robovan" data-aos="fade-left" data-aos-duration="1400"></div>
                 </div>
 
             </div>
@@ -291,14 +296,14 @@
         <section class="optimus_wrap">
             <div class="optimus_inner">
 
-                <div class="optimus_top">
+                <div class="optimus_top" data-aos="fade-up">
                     <span class="optimus_eyebrow">OPTIMUS</span>
                     <h2 class="optimus_title">차량에서 시작된 AI, 로봇으로</h2>
                 </div>
 
-                <img class="optimus_visual" src="./img/technology/optimus.avif" alt="Optimus">
+                <img class="optimus_visual" src="./img/technology/optimus.avif" alt="Optimus" data-aos="fade-up" data-aos-duration="1400">
 
-                <div class="optimus_text">
+                <div class="optimus_text" data-aos="fade-up">
                     <p class="optimus_desc">
                         Tesla가 개발하는 AI 기술은 도로 위의 차량을 넘어 현실 세계에서 직접 움직이고 상호작용하는 로봇으로 확장되고 있습니다.<br>
                         Tesla Optimus는 사람이 사용하는 공간에서 주변 환경을 인식하고 이동하며, 반복적이거나 위험한 작업을 수행할 수 있는 범용 휴머노이드 로봇을 목표로 개발되고 있습니다.<br>
@@ -352,6 +357,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./script/technology.js" defer></script>
 </body>
 

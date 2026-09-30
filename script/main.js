@@ -467,7 +467,7 @@ function startCounter() {
     counters.forEach(counter => {
 
         const target = Number(counter.dataset.count);
-        const duration = 3600; // 애니메이션 시간(ms)
+        const duration = 1800; // 애니메이션 시간(ms)
         const startTime = performance.now();
 
         function update(now) {
@@ -480,23 +480,15 @@ function startCounter() {
             const eased =
                 progress * progress * (3 - 2 * progress);
 
-            // 1000 이상은 10단위씩 증가
-            const step =
-                target >= 1000 ? 31 : 1;
-
-            let current =
-                Math.floor((target * eased) / step) * step;
-
-            // 마지막 값 보정
-            if (progress === 1) {
-                current = target;
-            }
+            const current = target * eased;
 
             counter.textContent =
-                current.toLocaleString();
+                Math.floor(current).toLocaleString();
 
             if (progress < 1) {
                 requestAnimationFrame(update);
+            } else {
+                counter.textContent = target.toLocaleString();
             }
         }
 
