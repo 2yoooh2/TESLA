@@ -170,7 +170,6 @@
 .tesla_ai_col_desc {
     font-size: 16px;
     line-height: 1.4;
-    color: #666;
 }
 
 
@@ -258,16 +257,12 @@
 }
 
 .ai_hardware_top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 96px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .ai_hardware_text {
-    flex: 1;
-    max-width: 480px;
+    margin: 0 auto 60px;
+    text-align: center;
     word-break: keep-all;
 }
 
@@ -299,9 +294,8 @@
 
 .ai_hardware_visual {
     position: relative;
-    width: 760px;
-    height: 640px;
-    flex-shrink: 0;
+    width: 100%;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -379,13 +373,14 @@
 .ai_hardware_col_desc {
     font-size: 16px;
     line-height: 1.5;
-    color: #666;
 }
 
 
 /* autonomy */
 .autonomy_wrap {
     padding: 200px 0;
+    background-color: #111;
+    color: #fff;
 }
 
 .autonomy_inner {
@@ -425,20 +420,39 @@
 }
 
 .autonomy_desc + .autonomy_desc {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
 /* robotaxi / robovan rows */
 .autonomy_row {
+    position: relative;
+    z-index: 0;
     display: flex;
     align-items: center;
     gap: 96px;
     justify-content: flex-start;
 }
 
+.autonomy_row::after {
+    position: absolute;
+    content: attr(data-bg);
+    font-weight: 900;
+    z-index: -1;
+    font-size: 130px;
+    top: 20px;
+    right: -60px;
+    color: rgb(255, 255, 255, 10%);
+}
+
 .autonomy_row_reverse{
     justify-content: flex-end;
+}
+
+.autonomy_row_reverse::after {
+    top: 20px;
+    left: -30px;
+    right: auto;
 }
 .autonomy_row + .autonomy_row {
     margin-top: 50px;
@@ -481,7 +495,6 @@
 .autonomy_row_desc {
     font-size: 18px;
     line-height: 1.4;
-    color: #666;
 }
 
 
@@ -497,7 +510,7 @@
 }
 
 .optimus_top {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
     word-break: keep-all;
 }
@@ -506,11 +519,10 @@
     display: block;
     width: 100%;
     height: auto;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .optimus_text {
-    max-width: 640px;
     margin: 0 auto;
     text-align: center;
     word-break: keep-all;
