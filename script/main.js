@@ -417,8 +417,16 @@ function initLineupSwiper() {
 
     new Swiper(".lineup_swiper", {
         slidesPerView: 1,
-        spaceBetween: 300,
         speed: 800,
+        loop: true,
+        effect: "fade",
+        /* autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+        }, */
+        fadeEffect: {
+            crossFade: true
+        },
 
         pagination: {
             el: ".lineup_pagination",
@@ -570,5 +578,13 @@ window.addEventListener(
         renderHeaderScroll();
         initSoftwareScroll();
         initLineupSwiper();
+
+        if (window.AOS) {
+            AOS.init({
+                duration: 800,
+                once: false,
+                offset: 80
+            });
+        }
     }
 );
