@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" fill="none">
+  <title>Blind Spot Monitoring</title>
+  <g stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(35 68)">
+      <path d="M12 22C12 8 19 3 35 3S58 8 58 22L61 39V111C61 124 54 130 35 130S9 124 9 111V39Z"/>
+      <path d="M17 34C27 29 43 29 53 34L49 52H21Z"/>
+      <path d="M21 58H49V97H21Z"/>
+      <path d="M20 105H50L53 116C43 122 27 122 17 116Z"/>
+      <path d="M14 43V100M56 43V100M9 42H5V51H9M61 42H65V51H61"/>
+    </g>
+    <g transform="translate(151 28) scale(.79)">
+      <path d="M12 22C12 8 19 3 35 3S58 8 58 22L61 39V111C61 124 54 130 35 130S9 124 9 111V39Z"/>
+      <path d="M17 34C27 29 43 29 53 34L49 52H21Z"/>
+      <path d="M21 58H49V97H21Z"/>
+      <path d="M20 105H50L53 116C43 122 27 122 17 116Z"/>
+      <path d="M14 43V100M56 43V100M9 42H5V51H9M61 42H65V51H61"/>
+    </g>
+  </g>
+  <!-- Change this stroke value to recolor the detection arcs. -->
+  <g id="detection" stroke="#E82127" stroke-width="4" stroke-linecap="round">
+    <path d="M114 111Q136 136 114 161"/>
+    <path d="M128 101Q158 136 128 171"/>
+  </g>
+</svg>

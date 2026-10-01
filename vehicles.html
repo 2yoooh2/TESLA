@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="./css/vehicles.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body>
@@ -119,29 +122,27 @@
         <section class="exterior_wrap">
             <div class="exterior_inner">
 
-                <div class="exterior_text">
+                <div class="exterior_text" data-aos="fade-right">
                     <span class="exterior_eyebrow">EXTERIOR</span>
                     <h2 class="exterior_title">효율을 완성하는 디자인</h2>
                     <p class="exterior_desc">
-                        Model 3의 낮고 매끄러운 실루엣은 디자인과 주행 효율을 함께 고려해 완성되었습니다.<br>
-                        정돈된 전면부와 날렵한 헤드램프, 차체를 따라 자연스럽게 이어지는 라인은 <br>
-                        Model 3 특유의 간결하고 역동적인 인상을 만듭니다.<br>
-                        공기가 차량 주변을 효율적으로 흐를 수 있도록 설계된 차체와<br>
-                        넓게 이어지는 글라스 루프는 주행 효율과 개방적인 디자인을 함께 완성합니다.
+                        Model 3의 낮고 매끄러운 실루엣은<br>디자인과 주행 효율을 고려해 완성되었습니다.<br>
+                        정돈된 전면부와 날렵한 헤드램프, 자연스럽게 이어지는<br>차체 라인은 간결하고 역동적인 인상을 만듭니다.<br>
+                        공기 흐름을 고려한 차체와 넓은 글라스 루프는 주행 효율과 개방적인 디자인을 완성합니다.
                     </p>
                 </div>
 
-                <div class="exterior_visual"></div>
+                <div class="exterior_visual" data-aos="fade-left" data-aos-delay="150"></div>
 
                 <div class="exterior_row">
-                    <div class="exterior_item">
+                    <div class="exterior_item" data-aos="fade-up" data-aos-delay="0">
                         <div class="exterior_item_img exterior_item_img_aero"></div>
                         <h3 class="exterior_item_name">Aerodynamic Design</h3>
                         <p class="exterior_item_desc">
                             차체 전체의 공기 흐름을 고려한 매끄러운 디자인으로 공기 저항을 줄이고 주행 효율을 높였습니다.
                         </p>
                     </div>
-                    <div class="exterior_item">
+                    <div class="exterior_item" data-aos="fade-up" data-aos-delay="150">
                         <div class="exterior_item_img exterior_item_img_roof"></div>
                         <h3 class="exterior_item_name">All-Glass Roof</h3>
                         <p class="exterior_item_desc">
@@ -156,7 +157,7 @@
         <section class="interior_wrap">
             <div class="interior_inner">
 
-                <div class="interior_text">
+                <div class="interior_text" data-aos="fade-up">
                     <span class="interior_eyebrow">INTERIOR</span>
                     <h2 class="interior_title">필요한 것만 남긴 공간</h2>
                     <p class="interior_desc">
@@ -167,13 +168,13 @@
 
                 <div class="interior_row">
 
-                    <div class="interior_visual">
+                    <div class="interior_visual" data-aos="fade-right">
                         <div class="interior_visual_img interior_visual_img1 is_active" data-visual="1"></div>
                         <div class="interior_visual_img interior_visual_img2" data-visual="2"></div>
                         <div class="interior_visual_img interior_visual_img3" data-visual="3"></div>
                     </div>
 
-                    <div class="interior_accordion">
+                    <div class="interior_accordion" data-aos="fade-left">
                         <div class="interior_acc_item is_active" data-target="1">
                             <button type="button" class="interior_acc_head">Center Touchscreen</button>
                             <div class="interior_acc_body">
@@ -217,7 +218,7 @@
         <section class="comfort_wrap">
             <div class="comfort_inner">
 
-                <div class="comfort_text">
+                <div class="comfort_text" data-aos="fade-up">
                     <span class="comfort_eyebrow">COMFORT &amp; QUIET</span>
                     <h2 class="comfort_title">모든 좌석에서 이어지는 편안함</h2>
                     <p class="comfort_desc">
@@ -227,7 +228,7 @@
                     </p>
                 </div>
 
-                <div class="comfort_slider">
+                <div class="comfort_slider" data-aos="fade-up">
 
                     <div class="swiper comfort_swiper">
                         <div class="swiper-wrapper">
@@ -270,7 +271,7 @@
             <div class="drive_visual">
                 <video class="drive_video" src="./img/vehicles/drive.webm" autoplay muted loop playsinline></video>
                 <div class="drive_inner">
-                    <div class="drive_text">
+                    <div class="drive_text" data-aos="fade-right">
                         <span class="drive_eyebrow">DRIVE</span>
                         <h2 class="drive_title">즉각적으로 반응하는 주행</h2>
                         <p class="drive_desc">
@@ -290,7 +291,7 @@
         <section class="performance_wrap">
             <div class="performance_inner">
 
-                <div class="performance_text">
+                <div class="performance_text" data-aos="fade-up">
                     <span class="performance_eyebrow">MODEL 3 PERFORMANCE</span>
                     <h2 class="performance_title">더 강력하게 완성된 퍼포먼스</h2>
                     <p class="performance_desc">
@@ -305,13 +306,13 @@
 
                 <div class="performance_row">
 
-                    <div class="performance_visual">
+                    <div class="performance_visual" data-aos="fade-left">
                         <div class="performance_visual_img performance_visual_img1 is_active" data-visual="1"></div>
                         <div class="performance_visual_img performance_visual_img2" data-visual="2"></div>
                         <div class="performance_visual_img performance_visual_img3" data-visual="3"></div>
                     </div>
 
-                    <div class="performance_accordion">
+                    <div class="performance_accordion" data-aos="fade-right">
                         <div class="performance_acc_item is_active" data-target="1">
                             <button type="button" class="performance_acc_head">Adaptive Damping</button>
                             <div class="performance_acc_body">
@@ -355,7 +356,7 @@
         <section class="model3_safety_wrap">
             <div class="model3_safety_inner">
 
-                <div class="model3_safety_text">
+                <div class="model3_safety_text" data-aos="fade-up">
                     <span class="model3_safety_eyebrow">SAFETY</span>
                     <h2 class="model3_safety_title">주행의 기본이 되는 안전</h2>
                     <p class="model3_safety_desc">
@@ -365,58 +366,23 @@
                 </div>
 
                 <div class="model3_safety_row">
-
-                    <div class="model3_safety_list">
-                        <div class="model3_safety_item">
-                            <h3 class="model3_safety_item_title">01 Blind Spot Monitoring</h3>
-                            <p class="model3_safety_item_desc">차선 변경 시 주변 차량을 확인할 수 있도록 시각적 정보를 제공합니다.</p>
-                        </div>
-                        <div class="model3_safety_item">
-                            <h3 class="model3_safety_item_title">02 Collision Avoidance</h3>
-                            <p class="model3_safety_item_desc">주행 중 발생할 수 있는 충돌 위험을 감지하고 운전자의 대응을 보조합니다.</p>
-                        </div>
-                        <div class="model3_safety_item">
-                            <h3 class="model3_safety_item_title">03 Surrounding Awareness</h3>
-                            <p class="model3_safety_item_desc">차량 주변의 카메라를 활용해 주행과 주차 과정에서 주변 상황을 파악할 수 있도록 지원합니다.</p>
-                        </div>
+                    <div class="model3_safety_item" data-aos="fade-up" data-aos-delay="0">
+                        <img class="model3_safety_item_icon" src="./img/vehicles/blind-spot-monitoring.png" alt="">
+                        <h3 class="model3_safety_item_title">Blind Spot Monitoring</h3>
+                        <p class="model3_safety_item_desc">차선 변경 시 사각지대에 있는 주변 차량을 확인할 수 있도록 시각적 정보를 제공합니다.<br>
+                            운전자가 놓치기 쉬운 영역을 확인하도록 도와 주변 상황을 살피고 차선 변경을 판단하는 데 도움을 줍니다.</p>
                     </div>
-
-                    <div class="model3_safety_visual"></div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="model3_safety2_wrap">
-            <div class="model3_safety2_inner">
-
-                <div class="model3_safety2_text">
-                    <span class="model3_safety2_eyebrow">SAFETY</span>
-                    <h2 class="model3_safety2_title">주행의 기본이 되는 안전</h2>
-                    <p class="model3_safety2_desc">
-                        Model 3는 탑승자 보호와 주변 상황 인식을 고려한 다양한 안전 시스템을 제공합니다.<br>
-                        차량 주변의 카메라와 소프트웨어를 활용하는 주행 보조 기능과 함께 안전벨트와 에어백 등의 안전 시스템을 통해 주행 과정에서 운전자와 탑승자를 보호하도록 설계되었습니다.
-                    </p>
-                </div>
-
-                <div class="model3_safety2_visual"></div>
-
-                <div class="model3_safety2_row">
-                    <div class="model3_safety2_item">
-                        <div class="model3_safety2_item_img"></div>
-                        <h3 class="model3_safety2_item_title">01 Blind Spot Monitoring</h3>
-                        <p class="model3_safety2_item_desc">차선 변경 시 주변 차량을 확인할 수 있도록 시각적 정보를 제공합니다.</p>
+                    <div class="model3_safety_item" data-aos="fade-up" data-aos-delay="150">
+                        <img class="model3_safety_item_icon" src="./img/vehicles/collision-avoidance.png" alt="">
+                        <h3 class="model3_safety_item_title">Collision Avoidance</h3>
+                        <p class="model3_safety_item_desc">주행 중 발생할 수 있는 충돌 위험을 감지하고 경고를 통해 운전자의 대응을 보조합니다.<br>
+                            위험 상황에서는 제동을 지원해 충돌 가능성을 줄이거나 충돌로 인한 피해를 완화하는 데 도움을 줍니다.</p>
                     </div>
-                    <div class="model3_safety2_item">
-                        <div class="model3_safety2_item_img"></div>
-                        <h3 class="model3_safety2_item_title">02 Collision Avoidance</h3>
-                        <p class="model3_safety2_item_desc">주행 중 발생할 수 있는 충돌 위험을 감지하고 운전자의 대응을 보조합니다.</p>
-                    </div>
-                    <div class="model3_safety2_item">
-                        <div class="model3_safety2_item_img"></div>
-                        <h3 class="model3_safety2_item_title">03 Surrounding Awareness</h3>
-                        <p class="model3_safety2_item_desc">차량 주변의 카메라를 활용해 주행과 주차 과정에서 주변 상황을 파악할 수 있도록 지원합니다.</p>
+                    <div class="model3_safety_item" data-aos="fade-up" data-aos-delay="300">
+                        <img class="model3_safety_item_icon" src="./img/vehicles/surrounding-awareness.png" alt="">
+                        <h3 class="model3_safety_item_title">Surrounding Awareness</h3>
+                        <p class="model3_safety_item_desc">차량 주변의 카메라를 활용해 주행과 주차 과정에서 주변 상황을 파악할 수 있도록 지원합니다.<br>
+                            좁은 공간에서 이동하거나 주차할 때 주변 차량과 장애물을 확인해 차량을 조작하는 데 도움을 줍니다.</p>
                     </div>
                 </div>
 
@@ -426,9 +392,9 @@
         <section class="specs_wrap">
             <div class="specs_inner">
 
-                <h2 class="specs_title">SPECIFICATIONS</h2>
+                <h2 class="specs_title" data-aos="fade-up">SPECIFICATIONS</h2>
 
-                <div class="specs_tabs">
+                <div class="specs_tabs" data-aos="fade-up" data-aos-delay="100">
                     <button type="button" class="specs_tab is_active" data-trim="standard">Standard</button>
                     <button type="button" class="specs_tab" data-trim="premium">Premium</button>
                     <button type="button" class="specs_tab" data-trim="performance">Performance</button>
@@ -436,7 +402,7 @@
 
                 <div class="specs_row">
 
-                    <div class="specs_list">
+                    <div class="specs_list" data-aos="fade-right">
                         <div class="specs_item">
                             <span class="specs_item_label">주행 가능 거리</span>
                             <span class="specs_item_value" data-field="range">382 km</span>
@@ -471,7 +437,7 @@
                         </div>
                     </div>
 
-                    <div class="specs_visual">
+                    <div class="specs_visual" data-aos="fade-left">
                         <div class="specs_visual_img specs_visual_img_standard is_active" data-trim-visual="standard"></div>
                         <div class="specs_visual_img specs_visual_img_premium" data-trim-visual="premium"></div>
                         <div class="specs_visual_img specs_visual_img_performance" data-trim-visual="performance"></div>
@@ -479,7 +445,7 @@
 
                 </div>
 
-                <p class="specs_note">
+                <p class="specs_note" data-aos="fade-up">
                     차량 이미지는 이해를 돕기 위한 예시입니다. 실제 모델은 다를 수 있습니다.<br>
                     표기된 제원은 차량의 옵션 구성 및 여러 요인에 따라 달라질 수 있습니다.
                 </p>
@@ -530,6 +496,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./script/vehicles.js" defer></script>
 </body>
 

@@ -1254,16 +1254,16 @@ main {}
     height: 48px;
 }
 .quick_quote{
-    background: url(../img/file-_invoice.svg) no-repeat center center / cover;
+    background: url(../img/quote.svg) no-repeat center center / cover;
 }
 .quick_test-drive{
-    background: url(../img/file-_invoice.svg) no-repeat center center / cover;
+    background: url(../img/test-drive.svg) no-repeat center center / cover;
 }
 .quick_charger{
-    background: url(../img/file-_invoice.svg) no-repeat center center / cover;
+    background: url(../img/charger.svg) no-repeat center center / cover;
 }
 .quick_service{
-    background: url(../img/file-_invoice.svg) no-repeat center center / cover;
+    background: url(../img/service.svg) no-repeat center center / cover;
 }
 .quick_item a span{
     font-size: 18px;
@@ -1304,7 +1304,7 @@ footer {
 
 .footer_gnb a {
     font-size: 16px;
-    color: #ccc;
+    color: #eee;
     transition: color 0.2s ease;
 }
 
@@ -1324,7 +1324,7 @@ footer {
 .footer_info p {
     font-size: 14px;
     line-height: 1.6;
-    color: #ccc;
+    color: #eee;
 }
 
 .footer_info a {
@@ -1343,7 +1343,7 @@ footer {
 
 .footer_legal a {
     font-size: 14px;
-    color: #ccc;
+    color: #eee;
     transition: color 0.2s ease;
 }
 
@@ -1354,7 +1354,7 @@ footer {
 .footer_legal li + li::before {
     content: "\00b7";
     margin: 0 12px;
-    color: #ccc;
+    color: #eee;
 }
 
 .footer_bottom {
@@ -1363,7 +1363,7 @@ footer {
 
 .footer_copyright {
     font-size: 12px;
-    color: #ccc;
+    color: #eee;
 }
 
 

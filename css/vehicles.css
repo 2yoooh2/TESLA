@@ -73,7 +73,7 @@
 
 .exterior_inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
     gap: 40px;
     max-width: var(--grid-width);
     margin: 0 auto;
@@ -768,7 +768,7 @@
     }
 }
 
-/* safety (static, no accordion) */
+/* safety */
 /* style.css에 이미 .safety_* (메인 페이지 Safety 섹션)가 정의되어 있어 충돌 방지를 위해 model3_safety_ 접두사 사용 */
 .model3_safety_wrap {
     padding-bottom: 200px;
@@ -780,7 +780,7 @@
 }
 
 .model3_safety_text {
-    max-width: 700px;
+    margin-bottom: 40px;
     word-break: keep-all;
 }
 
@@ -807,24 +807,28 @@
 }
 
 .model3_safety_row {
-    display: flex;
-    align-items: flex-start;
-    gap: 80px;
-    margin-top: 80px;
-}
-
-.model3_safety_list {
-    flex: 1;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
 }
 
 .model3_safety_item {
-    padding: 24px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 32px;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+}
+
+.model3_safety_item_icon {
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 10px;
+    object-fit: contain;
 }
 
 .model3_safety_item_title {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 22px;
     font-weight: 700;
 }
@@ -835,20 +839,9 @@
     word-break: keep-all;
 }
 
-.model3_safety_visual {
-    width: 640px;
-    aspect-ratio: 1 / 1;
-    flex-shrink: 0;
-    background: url(../img/vehicles/safety.avif) no-repeat center / cover;
-}
-
 @media screen and (max-width: 1024px) {
     .model3_safety_wrap {
         padding: 100px 24px;
-    }
-
-    .model3_safety_text {
-        max-width: 100%;
     }
 
     .model3_safety_title {
@@ -860,129 +853,11 @@
     }
 
     .model3_safety_row {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
-    }
-
-    .model3_safety_visual {
-        order: -1;
-        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 28px;
     }
 
     .model3_safety_item_title {
-        font-size: 18px;
-    }
-}
-
-/* safety2 (비교용 복제본, model3_safety_ 와 동일한 스타일에서 시작) */
-.model3_safety2_wrap {
-    padding-bottom: 200px;
-}
-
-.model3_safety2_inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: var(--grid-width);
-    margin: 0 auto;
-}
-
-.model3_safety2_text {
-    align-self: center;
-    max-width: 640px;
-    word-break: keep-all;
-}
-
-.model3_safety2_eyebrow {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #E82127;
-    font-family: "Orbitron", sans-serif;
-}
-
-.model3_safety2_title {
-    margin-bottom: 20px;
-    font-size: 36px;
-    font-weight: 700;
-    font-family: "Pretendard Variable", Pretendard, system-ui,
-        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-}
-
-.model3_safety2_desc {
-    font-size: 18px;
-    line-height: 1.4;
-}
-
-.model3_safety2_row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column: 1 / -1;
-    gap: 40px;
-}
-
-.model3_safety2_item_img {
-    width: 100%;
-    height: 360px;
-    margin-bottom: 20px;
-    background-color: #e5e5e5;
-}
-
-.model3_safety2_item_title {
-    margin-bottom: 10px;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.model3_safety2_item_desc {
-    font-size: 16px;
-    line-height: 1.5;
-    word-break: keep-all;
-}
-
-.model3_safety2_visual {
-    width: 100%;
-    height: 350px;
-    background: url(../img/vehicles/safety.avif) no-repeat center / cover;
-}
-
-@media screen and (max-width: 1024px) {
-    .model3_safety2_wrap {
-        padding: 100px 24px;
-    }
-
-    .model3_safety2_inner {
-        grid-template-columns: 1fr;
-    }
-
-    .model3_safety2_text {
-        max-width: 100%;
-    }
-
-    .model3_safety2_title {
-        font-size: 28px;
-    }
-
-    .model3_safety2_desc {
-        font-size: 16px;
-    }
-
-    .model3_safety2_row {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .model3_safety2_visual {
-        height: 40vh;
-    }
-
-    .model3_safety2_item_img {
-        height: 240px;
-    }
-
-    .model3_safety2_item_title {
         font-size: 18px;
     }
 }
@@ -1072,7 +947,7 @@
     position: absolute;
     inset: 0;
     opacity: 0;
-    background: no-repeat center / cover;
+    background: no-repeat center / contain;
     transition: opacity .4s ease;
 }
 
