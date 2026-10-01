@@ -420,10 +420,10 @@ function initLineupSwiper() {
         speed: 800,
         loop: true,
         effect: "fade",
-        /* autoplay: {
+        autoplay: {
             delay: 4000,
             disableOnInteraction: false
-        }, */
+        },
         fadeEffect: {
             crossFade: true
         },
