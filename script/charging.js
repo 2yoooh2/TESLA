@@ -4,7 +4,7 @@
 
 if (window.AOS) {
     AOS.init({
-        duration: 800,
+        duration: 600,
         once: false,
         offset: 80
     });
