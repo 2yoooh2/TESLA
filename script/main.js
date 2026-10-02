@@ -527,7 +527,7 @@ function swapHeaderLogo(active) {
     headerLogo.style.opacity = "0";
 
     logoSwapTimer = setTimeout(() => {
-        headerLogo.src = active ? "./img/tesla_t_logo.png" : "./img/tesla_logo.svg";
+        headerLogo.src = active ? "./img/tesla_t_logo.webp" : "./img/tesla_logo.svg";
         headerLogo.style.opacity = "1";
     }, 200);
 }

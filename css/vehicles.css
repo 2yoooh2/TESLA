@@ -17,7 +17,7 @@
     position: relative;
     width: 100%;
     height: 45vh;
-    background: url(../img/vehicles/intro.jpg) no-repeat center / cover;
+    background: url(../img/vehicles/intro.webp) no-repeat center / cover;
     overflow: hidden;
     color: #fff;
 }
@@ -110,7 +110,7 @@
 .exterior_visual {
     width: 100%;
     height: 350px;
-    background: url(../img/vehicles/exterior.jpg) no-repeat center / cover;
+    background: url(../img/vehicles/exterior.webp) no-repeat center / cover;
 }
 
 .exterior_row {
@@ -136,7 +136,7 @@
 }
 
 .exterior_item_img_roof {
-    background-image: url(../img/vehicles/exterior_roof.jpg);
+    background-image: url(../img/vehicles/exterior_roof.webp);
 }
 
 .exterior_item_name {
@@ -259,15 +259,15 @@
 }
 
 .interior_visual_img1 {
-    background-image: url(../img/vehicles/interior_touchscreen.jpg);
+    background-image: url(../img/vehicles/interior_touchscreen.webp);
 }
 
 .interior_visual_img2 {
-    background-image: url(../img/vehicles/interior_ambient.png);
+    background-image: url(../img/vehicles/interior_ambient.webp);
 }
 
 .interior_visual_img3 {
-    background-image: url(../img/vehicles/interior_minimal.jpg);
+    background-image: url(../img/vehicles/interior_minimal.webp);
 }
 
 .interior_accordion {
@@ -409,16 +409,16 @@
 }
 
 .comfort_slide_visual1 {
-    background-image: url(../img/vehicles/comfort_frontseats.jpg);
+    background-image: url(../img/vehicles/comfort_frontseats.webp);
 }
 
 .comfort_slide_visual2 {
-    background-image: url(../img/vehicles/comfort_display.jpg);
+    background-image: url(../img/vehicles/comfort_display.webp);
     background-position: 100% 40%;
 }
 
 .comfort_slide_visual3 {
-    background-image: url(../img/vehicles/comfort_charging.jpg);
+    background-image: url(../img/vehicles/comfort_charging.webp);
     background-position: 100% 30%;
 }
 
@@ -676,15 +676,15 @@
 }
 
 .performance_visual_img1 {
-    background-image: url(../img/vehicles/performance_adaptive.jpg);
+    background-image: url(../img/vehicles/performance_adaptive.webp);
 }
 
 .performance_visual_img2 {
-    background-image: url(../img/vehicles/performance_brakes.jpg);
+    background-image: url(../img/vehicles/performance_brakes.webp);
 }
 
 .performance_visual_img3 {
-    background-image: url(../img/vehicles/perpormane_track.jfif);
+    background-image: url(../img/vehicles/perpormane_track.webp);
 }
 
 .performance_accordion {

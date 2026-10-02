@@ -187,7 +187,7 @@
 .supercharger_visual {
     width: 100%;
     height: 640px;
-    background-image: url(../img/charging/supercharger.png);
+    background-image: url(../img/charging/supercharger.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@
 /* trip planner */
 .trip_planner_wrap {
     padding: 200px 0;
-    background-image: url(../img/charging/bg.png);
+    background-image: url(../img/charging/bg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -317,15 +317,15 @@
 }
 
 .trip_planner_visual_route {
-    background-image: url(../img/charging/trip_route.png);
+    background-image: url(../img/charging/trip_route.webp);
 }
 
 .trip_planner_visual_battery {
-    background-image: url(../img/charging/trip_battery.png);
+    background-image: url(../img/charging/trip_battery.webp);
 }
 
 .trip_planner_visual_charging {
-    background-image: url(../img/charging/trip_charging.png);
+    background-image: url(../img/charging/trip_charging.webp);
 }
 
 .trip_planner_step_text {
@@ -451,7 +451,7 @@
     width: 520px;
     height: 760px;
     flex-shrink: 0;
-    background-image: url(../img/charging/tesla_app.png);
+    background-image: url(../img/charging/tesla_app.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -463,7 +463,7 @@
     position: relative;
     width: 100%;
     height: 70vh;
-    background-image: url(../img/charging/charging_anywhere.jpg);
+    background-image: url(../img/charging/charging_anywhere.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

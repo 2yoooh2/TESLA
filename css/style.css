@@ -477,13 +477,13 @@ main {}
 
 .fsd_item {}
 .fsd_item .smartsummon{
-    background: url(../img/fsd_smartsummon.png) center/cover ;
+    background: url(../img/fsd_smartsummon.webp) center/cover ;
 }
 .fsd_item .fsd{
-    background: url(../img/fsd_fsd.png) center/cover ;
+    background: url(../img/fsd_fsd.webp) center/cover ;
 }
 .fsd_item .autopark{
-    background: url(../img/fsd_autopark.png) center/cover ;
+    background: url(../img/fsd_autopark.webp) center/cover ;
 }
 
 .fsd_content_line {
@@ -558,7 +558,7 @@ main {}
 }
 
 .safety_bg {
-    background-image: url(../img/Safety.png);
+    background-image: url(../img/Safety.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -826,7 +826,7 @@ main {}
 
     margin: 40px auto 0;
 
-    background-image: url(../img/sw_car.png);
+    background-image: url(../img/sw_car.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -982,19 +982,19 @@ main {}
 }
 
 .models{
-    background: url(../img/modelS.png) no-repeat center/contain;
+    background: url(../img/modelS.webp) no-repeat center/contain;
 }
 .modelx{
-    background: url(../img/modelX.png) no-repeat center/contain;
+    background: url(../img/modelX.webp) no-repeat center/contain;
 }
 .modely{
-    background: url(../img/modelY.png) no-repeat center/contain;
+    background: url(../img/modelY.webp) no-repeat center/contain;
 }
 .model3{
-    background: url(../img/model3.png) no-repeat center/contain;
+    background: url(../img/model3.webp) no-repeat center/contain;
 }
 .cybertruck{
-    background: url(../img/cybertruck.png) no-repeat center/contain;
+    background: url(../img/cybertruck.webp) no-repeat center/contain;
 }
 
 .lineup_model {

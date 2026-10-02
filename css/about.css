@@ -14,7 +14,7 @@
     width: 100%;
     height: 45vh;
     overflow: hidden;
-    background: url(../img/about/intro.jpg) no-repeat 100% 30% / cover;
+    background: url(../img/about/intro.webp) no-repeat 100% 30% / cover;
     color: #fff;
     z-index: 100;
 }
@@ -119,7 +119,7 @@
     width: 800px;
     height: 450px;
     flex-shrink: 0;
-    background: url(../img/about/who.png) no-repeat center/cover;
+    background: url(../img/about/who.webp) no-repeat center/cover;
 }
 
 
@@ -148,7 +148,7 @@
     height: 350px;
     top: 0;
     left: 0;
-    background : url(../img/about/mission.png) no-repeat center/ cover;
+    background : url(../img/about/mission.webp) no-repeat center/ cover;
 }
 
 .mission_image2 {
@@ -156,7 +156,7 @@
     height: 260px;
     right: 0;
     bottom: 0;
-    background : url(../img/about/mission9.jpg) no-repeat center/cover;
+    background : url(../img/about/mission9.webp) no-repeat center/cover;
 }
 
 .mission_text {
@@ -192,7 +192,7 @@
 /* what we do */
 .what_wrap {
     padding: 60px 0 120px;
-    background: url(../img/about/what_bg.png) no-repeat center/cover;
+    background: url(../img/about/what_bg.webp) no-repeat center/cover;
     position: relative;
 }
 
@@ -254,15 +254,15 @@
 }
 
 .what_item1 .what_item_img {
-    background: url(../img/about/what_engineering.png) no-repeat center / cover;
+    background: url(../img/about/what_engineering.webp) no-repeat center / cover;
 }
 
 .what_item2 .what_item_img {
-    background: url(../img/about/what_software.png) no-repeat center / cover;
+    background: url(../img/about/what_software.webp) no-repeat center / cover;
 }
 
 .what_item3 .what_item_img {
-    background: url(../img/about/what_manufacturing.png) no-repeat center / cover;
+    background: url(../img/about/what_manufacturing.webp) no-repeat center / cover;
 }
 
 .what_item_text {
@@ -386,7 +386,7 @@
     right: 0;
     width: 450px;
     height: 550px;
-    background: url(../img/about/people1.png)  no-repeat center / cover;
+    background: url(../img/about/people1.webp)  no-repeat center / cover;
 }
 
 .people_image2 {
@@ -394,7 +394,7 @@
     right: 470px;
     width: 650px;
     height: 380px;
-    background: url(../img/about/people2.png)  no-repeat center / cover;
+    background: url(../img/about/people2.webp)  no-repeat center / cover;
 }
 
 .people_image3 {
@@ -402,7 +402,7 @@
     right: 470px;
     width: 350px;
     height: 420px;
-    background: url(../img/about/people3.png)  no-repeat center / cover;
+    background: url(../img/about/people3.webp)  no-repeat center / cover;
 }
 
 .people_image4 {
@@ -410,14 +410,14 @@
     right: 0px;
     width: 450px;
     height: 250px;
-    background: url(../img/about/people4.png)  no-repeat center / cover;
+    background: url(../img/about/people4.webp)  no-repeat center / cover;
 }
 
 
 /* our impact */
 .impact_wrap {
     padding: 200px 0;
-    background: url(../img/about/impact.png) no-repeat center/cover;
+    background: url(../img/about/impact.webp) no-repeat center/cover;
     position: relative;
 }
 
